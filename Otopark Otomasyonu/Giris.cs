@@ -40,7 +40,7 @@ namespace Otopark_Otomasyonu
                         AnaSayfa anasayfa = new AnaSayfa();
                         anasayfa.Show();
                         Hide();
-                    }//asdasdajxnJXasdasd
+                    }
                     else
                     {
                         MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
