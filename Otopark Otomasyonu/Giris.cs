@@ -45,7 +45,7 @@ namespace Otopark_Otomasyonu
                     {
                         MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
                     }
-                
+                //asdasd
               connection.CloseConnection();
               
             }
