@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SifreDegistir));
-            this.button8 = new System.Windows.Forms.Button();
+            this.geri_don = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.yeni_sifre = new System.Windows.Forms.TextBox();
+            this.mevcut_sifre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.kullanici_adi = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button8
+            // geri_don
             // 
-            this.button8.BackColor = System.Drawing.Color.Navy;
-            this.button8.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(1044, 472);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(213, 69);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Geri Dön";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.geri_don.BackColor = System.Drawing.Color.Navy;
+            this.geri_don.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geri_don.ForeColor = System.Drawing.SystemColors.Control;
+            this.geri_don.Location = new System.Drawing.Point(1044, 472);
+            this.geri_don.Name = "geri_don";
+            this.geri_don.Size = new System.Drawing.Size(213, 69);
+            this.geri_don.TabIndex = 4;
+            this.geri_don.Text = "Geri Dön";
+            this.geri_don.UseVisualStyleBackColor = false;
+            this.geri_don.Click += new System.EventHandler(this.button8_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.yeni_sifre);
+            this.groupBox1.Controls.Add(this.mevcut_sifre);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.kullanici_adi);
             this.groupBox1.Controls.Add(this.button10);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -73,21 +73,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Şifre Değiştir";
             // 
-            // textBox1
+            // yeni_sifre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(253, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 34);
-            this.textBox1.TabIndex = 2;
+            this.yeni_sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.yeni_sifre.Location = new System.Drawing.Point(253, 167);
+            this.yeni_sifre.Name = "yeni_sifre";
+            this.yeni_sifre.Size = new System.Drawing.Size(212, 34);
+            this.yeni_sifre.TabIndex = 2;
             // 
-            // textBox2
+            // mevcut_sifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(253, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 34);
-            this.textBox2.TabIndex = 1;
+            this.mevcut_sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mevcut_sifre.Location = new System.Drawing.Point(253, 106);
+            this.mevcut_sifre.Name = "mevcut_sifre";
+            this.mevcut_sifre.Size = new System.Drawing.Size(212, 34);
+            this.mevcut_sifre.TabIndex = 1;
             // 
             // label3
             // 
@@ -109,14 +109,14 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Mevcut Şifre :";
             // 
-            // comboBox1
+            // kullanici_adi
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(253, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 38);
-            this.comboBox1.TabIndex = 0;
+            this.kullanici_adi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanici_adi.FormattingEnabled = true;
+            this.kullanici_adi.Location = new System.Drawing.Point(253, 45);
+            this.kullanici_adi.Name = "kullanici_adi";
+            this.kullanici_adi.Size = new System.Drawing.Size(212, 38);
+            this.kullanici_adi.TabIndex = 0;
             // 
             // button10
             // 
@@ -127,7 +127,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(212, 73);
             this.button10.TabIndex = 3;
-            this.button10.Text = "Şifreyi Değiştir";
+            this.button10.Text = "sifre_degistir";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -149,7 +149,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1323, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.geri_don);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "SifreDegistir";
@@ -163,14 +163,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button geri_don;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox kullanici_adi;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox yeni_sifre;
+        private System.Windows.Forms.TextBox mevcut_sifre;
     }
 }

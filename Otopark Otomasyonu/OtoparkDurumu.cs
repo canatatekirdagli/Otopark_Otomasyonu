@@ -28,5 +28,10 @@ namespace Otopark_Otomasyonu
         {
 
         }
+
+        private void B15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,29 +11,29 @@ using System.Windows.Forms;
 
 namespace Otopark_Otomasyonu
 {
-    public partial class Giris : Form
+    public partial class Giris1 : Form
     {
-        public Giris()
+        public Giris1()
         {
             InitializeComponent();
         }
         DatabaseConnection connection = new DatabaseConnection();
         private void Giris_Load(object sender, EventArgs e)
         {
-            //deneme
+        
             
         }
 
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (kullanici_adi.Text == "" || sifre.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı ve/veya şifre boş geçilemez.");
             }
             else
             {
-                SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM giris WHERE kullanici_adi = '{0}' AND sifre = '{1}'", textBox1.Text, textBox2.Text));
+                SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM giris WHERE kullanici_adi = '{0}' AND sifre = '{1}'", kullanici_adi.Text, sifre.Text));
                 
                     if(reader.HasRows == true)
                     {
@@ -64,17 +64,17 @@ namespace Otopark_Otomasyonu
         {
             if (checkBox1.CheckState==CheckState.Checked)
             {
-                textBox2.UseSystemPasswordChar = false;
+                sifre.UseSystemPasswordChar = false;
             }
             else
             {
-                textBox2.UseSystemPasswordChar = true;
+                sifre.UseSystemPasswordChar = true;
             }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.UseSystemPasswordChar=true;
+            sifre.UseSystemPasswordChar=true;
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -87,11 +87,11 @@ namespace Otopark_Otomasyonu
 
         private void Giris_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (kullanici_adi.Text == "" || sifre.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı ve/veya şifre boş geçilemez.");
             }
-            else if (textBox1.Text == "admin" && textBox2.Text == "12345")
+            else if (kullanici_adi.Text == "admin" && sifre.Text == "12345")
             {
                 AnaSayfa anasayfa = new AnaSayfa();
                 anasayfa.Show();

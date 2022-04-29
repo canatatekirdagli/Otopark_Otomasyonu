@@ -19,7 +19,7 @@ namespace Otopark_Otomasyonu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dateTimeLabel.Text = DateTime.Now.ToString();
+            tarih_saat.Text = DateTime.Now.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

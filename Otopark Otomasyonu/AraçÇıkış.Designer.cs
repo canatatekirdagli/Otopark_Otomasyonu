@@ -30,31 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Araç_Çıkışcs));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tc_kimlik = new System.Windows.Forms.MaskedTextBox();
+            this.park_yeri = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.plaka = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.marka = new System.Windows.Forms.TextBox();
+            this.soyad = new System.Windows.Forms.TextBox();
+            this.ad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.plaka_ara = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.park_yeri2 = new System.Windows.Forms.TextBox();
+            this.geri_don = new System.Windows.Forms.Button();
+            this.arac_cikis = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.toplam_tutar = new System.Windows.Forms.Label();
+            this.sure = new System.Windows.Forms.Label();
+            this.cikis_tarihi = new System.Windows.Forms.Label();
+            this.giris_tarihi = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -67,14 +67,14 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Navy;
-            this.groupBox3.Controls.Add(this.maskedTextBox1);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.tc_kimlik);
+            this.groupBox3.Controls.Add(this.park_yeri);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.plaka);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.marka);
+            this.groupBox3.Controls.Add(this.soyad);
+            this.groupBox3.Controls.Add(this.ad);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label2);
@@ -88,24 +88,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Müşteri Bilgileri";
             // 
-            // maskedTextBox1
+            // tc_kimlik
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(275, 114);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(183, 34);
-            this.maskedTextBox1.TabIndex = 1;
+            this.tc_kimlik.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc_kimlik.Location = new System.Drawing.Point(275, 114);
+            this.tc_kimlik.Mask = "00000000000";
+            this.tc_kimlik.Name = "tc_kimlik";
+            this.tc_kimlik.Size = new System.Drawing.Size(183, 34);
+            this.tc_kimlik.TabIndex = 1;
             // 
-            // comboBox1
+            // park_yeri
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(275, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 38);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.park_yeri.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.park_yeri.FormattingEnabled = true;
+            this.park_yeri.Location = new System.Drawing.Point(275, 45);
+            this.park_yeri.Name = "park_yeri";
+            this.park_yeri.Size = new System.Drawing.Size(183, 38);
+            this.park_yeri.TabIndex = 0;
+            this.park_yeri.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -117,13 +117,13 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Park Yeri :";
             // 
-            // textBox6
+            // plaka
             // 
-            this.textBox6.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(648, 114);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 34);
-            this.textBox6.TabIndex = 4;
+            this.plaka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.plaka.Location = new System.Drawing.Point(648, 114);
+            this.plaka.Name = "plaka";
+            this.plaka.Size = new System.Drawing.Size(183, 34);
+            this.plaka.TabIndex = 4;
             // 
             // label6
             // 
@@ -135,29 +135,29 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Plaka :";
             // 
-            // textBox5
+            // marka
             // 
-            this.textBox5.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.Location = new System.Drawing.Point(648, 53);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 34);
-            this.textBox5.TabIndex = 3;
+            this.marka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.marka.Location = new System.Drawing.Point(648, 53);
+            this.marka.Name = "marka";
+            this.marka.Size = new System.Drawing.Size(183, 34);
+            this.marka.TabIndex = 3;
             // 
-            // textBox3
+            // soyad
             // 
-            this.textBox3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(648, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 34);
-            this.textBox3.TabIndex = 5;
+            this.soyad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.soyad.Location = new System.Drawing.Point(648, 182);
+            this.soyad.Name = "soyad";
+            this.soyad.Size = new System.Drawing.Size(183, 34);
+            this.soyad.TabIndex = 5;
             // 
-            // textBox2
+            // ad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(275, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 34);
-            this.textBox2.TabIndex = 2;
+            this.ad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ad.Location = new System.Drawing.Point(275, 179);
+            this.ad.Name = "ad";
+            this.ad.Size = new System.Drawing.Size(183, 34);
+            this.ad.TabIndex = 2;
             // 
             // label5
             // 
@@ -202,10 +202,10 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Navy;
-            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.plaka_ara);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.park_yeri2);
             this.groupBox4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Location = new System.Drawing.Point(867, 29);
@@ -216,14 +216,14 @@
             this.groupBox4.Text = "Park Bilgileri";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // comboBox3
+            // plaka_ara
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(214, 66);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(183, 38);
-            this.comboBox3.TabIndex = 6;
+            this.plaka_ara.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.plaka_ara.FormattingEnabled = true;
+            this.plaka_ara.Location = new System.Drawing.Point(214, 66);
+            this.plaka_ara.Name = "plaka_ara";
+            this.plaka_ara.Size = new System.Drawing.Size(183, 38);
+            this.plaka_ara.TabIndex = 6;
             // 
             // label9
             // 
@@ -245,48 +245,48 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Plaka Ara :";
             // 
-            // textBox10
+            // park_yeri2
             // 
-            this.textBox10.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox10.Location = new System.Drawing.Point(214, 143);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(183, 34);
-            this.textBox10.TabIndex = 7;
+            this.park_yeri2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.park_yeri2.Location = new System.Drawing.Point(214, 143);
+            this.park_yeri2.Name = "park_yeri2";
+            this.park_yeri2.Size = new System.Drawing.Size(183, 34);
+            this.park_yeri2.TabIndex = 7;
             // 
-            // button8
+            // geri_don
             // 
-            this.button8.BackColor = System.Drawing.Color.Navy;
-            this.button8.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(568, 438);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(213, 69);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Geri Dön";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.geri_don.BackColor = System.Drawing.Color.Navy;
+            this.geri_don.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geri_don.ForeColor = System.Drawing.SystemColors.Control;
+            this.geri_don.Location = new System.Drawing.Point(568, 438);
+            this.geri_don.Name = "geri_don";
+            this.geri_don.Size = new System.Drawing.Size(213, 69);
+            this.geri_don.TabIndex = 9;
+            this.geri_don.Text = "Geri Dön";
+            this.geri_don.UseVisualStyleBackColor = false;
+            this.geri_don.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button7
+            // arac_cikis
             // 
-            this.button7.BackColor = System.Drawing.Color.Navy;
-            this.button7.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(568, 338);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(213, 69);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Araç Çıkış";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.arac_cikis.BackColor = System.Drawing.Color.Navy;
+            this.arac_cikis.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arac_cikis.ForeColor = System.Drawing.SystemColors.Control;
+            this.arac_cikis.Location = new System.Drawing.Point(568, 338);
+            this.arac_cikis.Name = "arac_cikis";
+            this.arac_cikis.Size = new System.Drawing.Size(213, 69);
+            this.arac_cikis.TabIndex = 8;
+            this.arac_cikis.Text = "Araç Çıkış";
+            this.arac_cikis.UseVisualStyleBackColor = false;
+            this.arac_cikis.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.toplam_tutar);
+            this.groupBox1.Controls.Add(this.sure);
+            this.groupBox1.Controls.Add(this.cikis_tarihi);
+            this.groupBox1.Controls.Add(this.giris_tarihi);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label8);
@@ -311,49 +311,49 @@
             this.label17.Text = "TL";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // label16
+            // toplam_tutar
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(217, 157);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 27);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "label16";
+            this.toplam_tutar.AutoSize = true;
+            this.toplam_tutar.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplam_tutar.ForeColor = System.Drawing.Color.Yellow;
+            this.toplam_tutar.Location = new System.Drawing.Point(217, 157);
+            this.toplam_tutar.Name = "toplam_tutar";
+            this.toplam_tutar.Size = new System.Drawing.Size(96, 27);
+            this.toplam_tutar.TabIndex = 10;
+            this.toplam_tutar.Text = "label16";
             // 
-            // label15
+            // sure
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.ForeColor = System.Drawing.Color.Yellow;
-            this.label15.Location = new System.Drawing.Point(217, 116);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 27);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "label15";
+            this.sure.AutoSize = true;
+            this.sure.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sure.ForeColor = System.Drawing.Color.Yellow;
+            this.sure.Location = new System.Drawing.Point(217, 116);
+            this.sure.Name = "sure";
+            this.sure.Size = new System.Drawing.Size(96, 27);
+            this.sure.TabIndex = 9;
+            this.sure.Text = "label15";
             // 
-            // label14
+            // cikis_tarihi
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.ForeColor = System.Drawing.Color.Yellow;
-            this.label14.Location = new System.Drawing.Point(217, 75);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 27);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "label14";
+            this.cikis_tarihi.AutoSize = true;
+            this.cikis_tarihi.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cikis_tarihi.ForeColor = System.Drawing.Color.Yellow;
+            this.cikis_tarihi.Location = new System.Drawing.Point(217, 75);
+            this.cikis_tarihi.Name = "cikis_tarihi";
+            this.cikis_tarihi.Size = new System.Drawing.Size(96, 27);
+            this.cikis_tarihi.TabIndex = 8;
+            this.cikis_tarihi.Text = "label14";
             // 
-            // label13
+            // giris_tarihi
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.ForeColor = System.Drawing.Color.Yellow;
-            this.label13.Location = new System.Drawing.Point(217, 34);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 27);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "label13";
+            this.giris_tarihi.AutoSize = true;
+            this.giris_tarihi.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.giris_tarihi.ForeColor = System.Drawing.Color.Yellow;
+            this.giris_tarihi.Location = new System.Drawing.Point(217, 34);
+            this.giris_tarihi.Name = "giris_tarihi";
+            this.giris_tarihi.Size = new System.Drawing.Size(96, 27);
+            this.giris_tarihi.TabIndex = 7;
+            this.giris_tarihi.Text = "label13";
             // 
             // label12
             // 
@@ -405,8 +405,8 @@
             this.ClientSize = new System.Drawing.Size(1323, 600);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.geri_don);
+            this.Controls.Add(this.arac_cikis);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.MaximizeBox = false;
@@ -428,33 +428,33 @@
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox plaka;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox marka;
+        private System.Windows.Forms.TextBox soyad;
+        private System.Windows.Forms.TextBox ad;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox park_yeri;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox plaka_ara;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox park_yeri2;
+        private System.Windows.Forms.Button geri_don;
+        private System.Windows.Forms.Button arac_cikis;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label toplam_tutar;
+        private System.Windows.Forms.Label sure;
+        private System.Windows.Forms.Label cikis_tarihi;
+        private System.Windows.Forms.Label giris_tarihi;
+        private System.Windows.Forms.MaskedTextBox tc_kimlik;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Otopark_Otomasyonu
 {
-    partial class Giris
+    partial class Giris1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giris));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giris1));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.kullanici_adi = new System.Windows.Forms.TextBox();
+            this.giris = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.sifre = new System.Windows.Forms.TextBox();
+            this.cikis = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,11 +50,11 @@
             this.groupBox4.Controls.Add(this.checkBox1);
             this.groupBox4.Controls.Add(this.pictureBox2);
             this.groupBox4.Controls.Add(this.pictureBox1);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.button10);
+            this.groupBox4.Controls.Add(this.kullanici_adi);
+            this.groupBox4.Controls.Add(this.giris);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.sifre);
             this.groupBox4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Location = new System.Drawing.Point(40, 35);
@@ -95,27 +95,27 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // kullanici_adi
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(323, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 34);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.kullanici_adi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanici_adi.Location = new System.Drawing.Point(323, 74);
+            this.kullanici_adi.Name = "kullanici_adi";
+            this.kullanici_adi.Size = new System.Drawing.Size(183, 34);
+            this.kullanici_adi.TabIndex = 0;
+            this.kullanici_adi.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button10
+            // giris
             // 
-            this.button10.BackColor = System.Drawing.Color.Navy;
-            this.button10.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(323, 234);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(183, 66);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "Giriş";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.giris.BackColor = System.Drawing.Color.Navy;
+            this.giris.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giris.ForeColor = System.Drawing.SystemColors.Control;
+            this.giris.Location = new System.Drawing.Point(323, 234);
+            this.giris.Name = "giris";
+            this.giris.Size = new System.Drawing.Size(183, 66);
+            this.giris.TabIndex = 3;
+            this.giris.Text = "Giriş";
+            this.giris.UseVisualStyleBackColor = false;
+            this.giris.Click += new System.EventHandler(this.button10_Click);
             // 
             // label9
             // 
@@ -137,29 +137,29 @@
             this.label10.TabIndex = 6;
             this.label10.Text = "Kullanıcı Adı :";
             // 
-            // textBox2
+            // sifre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(323, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 34);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre.Location = new System.Drawing.Point(323, 143);
+            this.sifre.Name = "sifre";
+            this.sifre.Size = new System.Drawing.Size(183, 34);
+            this.sifre.TabIndex = 1;
+            this.sifre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label1
+            // cikis
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(704, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 57);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.cikis.AutoSize = true;
+            this.cikis.BackColor = System.Drawing.Color.Transparent;
+            this.cikis.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cikis.ForeColor = System.Drawing.Color.White;
+            this.cikis.Location = new System.Drawing.Point(704, 9);
+            this.cikis.Name = "cikis";
+            this.cikis.Size = new System.Drawing.Size(50, 57);
+            this.cikis.TabIndex = 4;
+            this.cikis.Text = "X";
+            this.cikis.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // Giris
+            // Giris1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -168,11 +168,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(780, 472);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cikis);
             this.Controls.Add(this.groupBox4);
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "Giris";
+            this.Name = "Giris1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GİRİŞ";
             this.Load += new System.EventHandler(this.Giris_Load);
@@ -190,12 +190,12 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox sifre;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox kullanici_adi;
+        private System.Windows.Forms.Button giris;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label cikis;
     }
 }

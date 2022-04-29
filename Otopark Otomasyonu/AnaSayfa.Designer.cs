@@ -29,139 +29,139 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaSayfa));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dateTimeLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.kayitli_arac_giris = new System.Windows.Forms.Button();
+            this.arac_cikis = new System.Windows.Forms.Button();
+            this.kullanici_kaydi = new System.Windows.Forms.Button();
+            this.otopark_durumu = new System.Windows.Forms.Button();
+            this.tarih_saat = new System.Windows.Forms.Label();
+            this.cikis = new System.Windows.Forms.Label();
+            this.kayitli_kullanici_sil = new System.Windows.Forms.Button();
+            this.ayarlar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // kayitli_arac_giris
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.kayitli_arac_giris.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(492, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(334, 73);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Kayıtlı Araç Giriş";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.kayitli_arac_giris.BackColor = System.Drawing.Color.Navy;
+            this.kayitli_arac_giris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.kayitli_arac_giris.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayitli_arac_giris.ForeColor = System.Drawing.Color.White;
+            this.kayitli_arac_giris.Location = new System.Drawing.Point(492, 67);
+            this.kayitli_arac_giris.Name = "kayitli_arac_giris";
+            this.kayitli_arac_giris.Size = new System.Drawing.Size(334, 73);
+            this.kayitli_arac_giris.TabIndex = 0;
+            this.kayitli_arac_giris.Text = "Kayıtlı Araç Giriş";
+            this.kayitli_arac_giris.UseVisualStyleBackColor = false;
+            this.kayitli_arac_giris.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // arac_cikis
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.arac_cikis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(492, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(334, 73);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Araç Çıkış";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.arac_cikis.BackColor = System.Drawing.Color.Navy;
+            this.arac_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.arac_cikis.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arac_cikis.ForeColor = System.Drawing.Color.White;
+            this.arac_cikis.Location = new System.Drawing.Point(492, 162);
+            this.arac_cikis.Name = "arac_cikis";
+            this.arac_cikis.Size = new System.Drawing.Size(334, 73);
+            this.arac_cikis.TabIndex = 1;
+            this.arac_cikis.Text = "Araç Çıkış";
+            this.arac_cikis.UseVisualStyleBackColor = false;
+            this.arac_cikis.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // kullanici_kaydi
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.kullanici_kaydi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Navy;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(492, 262);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(334, 73);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Kullanıcı Kaydı";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.kullanici_kaydi.BackColor = System.Drawing.Color.Navy;
+            this.kullanici_kaydi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.kullanici_kaydi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kullanici_kaydi.ForeColor = System.Drawing.Color.White;
+            this.kullanici_kaydi.Location = new System.Drawing.Point(492, 262);
+            this.kullanici_kaydi.Name = "kullanici_kaydi";
+            this.kullanici_kaydi.Size = new System.Drawing.Size(334, 73);
+            this.kullanici_kaydi.TabIndex = 2;
+            this.kullanici_kaydi.Text = "Kullanıcı Kaydı";
+            this.kullanici_kaydi.UseVisualStyleBackColor = false;
+            this.kullanici_kaydi.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // otopark_durumu
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.otopark_durumu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Navy;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(492, 362);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(334, 73);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Otopark Durumu";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.otopark_durumu.BackColor = System.Drawing.Color.Navy;
+            this.otopark_durumu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.otopark_durumu.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otopark_durumu.ForeColor = System.Drawing.Color.White;
+            this.otopark_durumu.Location = new System.Drawing.Point(492, 362);
+            this.otopark_durumu.Name = "otopark_durumu";
+            this.otopark_durumu.Size = new System.Drawing.Size(334, 73);
+            this.otopark_durumu.TabIndex = 3;
+            this.otopark_durumu.Text = "Otopark Durumu";
+            this.otopark_durumu.UseVisualStyleBackColor = false;
+            this.otopark_durumu.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dateTimeLabel
+            // tarih_saat
             // 
-            this.dateTimeLabel.AutoSize = true;
-            this.dateTimeLabel.BackColor = System.Drawing.Color.Navy;
-            this.dateTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.dateTimeLabel.Location = new System.Drawing.Point(99, 87);
-            this.dateTimeLabel.Name = "dateTimeLabel";
-            this.dateTimeLabel.Size = new System.Drawing.Size(92, 32);
-            this.dateTimeLabel.TabIndex = 6;
-            this.dateTimeLabel.Text = "label2";
-            this.dateTimeLabel.Click += new System.EventHandler(this.dateTimeLabel_Click);
+            this.tarih_saat.AutoSize = true;
+            this.tarih_saat.BackColor = System.Drawing.Color.Navy;
+            this.tarih_saat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarih_saat.ForeColor = System.Drawing.SystemColors.Control;
+            this.tarih_saat.Location = new System.Drawing.Point(99, 87);
+            this.tarih_saat.Name = "tarih_saat";
+            this.tarih_saat.Size = new System.Drawing.Size(92, 32);
+            this.tarih_saat.TabIndex = 6;
+            this.tarih_saat.Text = "label2";
+            this.tarih_saat.Click += new System.EventHandler(this.dateTimeLabel_Click);
             // 
-            // label1
+            // cikis
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1218, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 57);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.cikis.AutoSize = true;
+            this.cikis.BackColor = System.Drawing.Color.Transparent;
+            this.cikis.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cikis.ForeColor = System.Drawing.Color.White;
+            this.cikis.Location = new System.Drawing.Point(1218, 20);
+            this.cikis.Name = "cikis";
+            this.cikis.Size = new System.Drawing.Size(50, 57);
+            this.cikis.TabIndex = 7;
+            this.cikis.Text = "X";
+            this.cikis.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button5
+            // kayitli_kullanici_sil
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.kayitli_kullanici_sil.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.Navy;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(492, 462);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(334, 73);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Kayıtlı Kullanıcı Sil";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.kayitli_kullanici_sil.BackColor = System.Drawing.Color.Navy;
+            this.kayitli_kullanici_sil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.kayitli_kullanici_sil.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayitli_kullanici_sil.ForeColor = System.Drawing.Color.White;
+            this.kayitli_kullanici_sil.Location = new System.Drawing.Point(492, 462);
+            this.kayitli_kullanici_sil.Name = "kayitli_kullanici_sil";
+            this.kayitli_kullanici_sil.Size = new System.Drawing.Size(334, 73);
+            this.kayitli_kullanici_sil.TabIndex = 4;
+            this.kayitli_kullanici_sil.Text = "Kayıtlı Kullanıcı Sil";
+            this.kayitli_kullanici_sil.UseVisualStyleBackColor = false;
+            this.kayitli_kullanici_sil.Click += new System.EventHandler(this.button5_Click);
             // 
-            // pictureBox1
+            // ayarlar
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1108, 422);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 160);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.ayarlar.BackColor = System.Drawing.Color.Transparent;
+            this.ayarlar.Image = ((System.Drawing.Image)(resources.GetObject("ayarlar.Image")));
+            this.ayarlar.Location = new System.Drawing.Point(1108, 422);
+            this.ayarlar.Name = "ayarlar";
+            this.ayarlar.Size = new System.Drawing.Size(160, 160);
+            this.ayarlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ayarlar.TabIndex = 9;
+            this.ayarlar.TabStop = false;
+            this.ayarlar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // AnaSayfa
             // 
@@ -172,14 +172,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1306, 579);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimeLabel);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ayarlar);
+            this.Controls.Add(this.kayitli_kullanici_sil);
+            this.Controls.Add(this.cikis);
+            this.Controls.Add(this.tarih_saat);
+            this.Controls.Add(this.otopark_durumu);
+            this.Controls.Add(this.kullanici_kaydi);
+            this.Controls.Add(this.kayitli_arac_giris);
+            this.Controls.Add(this.arac_cikis);
             this.MaximizeBox = false;
             this.Name = "AnaSayfa";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
@@ -187,7 +187,7 @@
             this.Text = "ANA SAYFA";
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,14 +195,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label dateTimeLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button kayitli_arac_giris;
+        private System.Windows.Forms.Button arac_cikis;
+        private System.Windows.Forms.Button kullanici_kaydi;
+        private System.Windows.Forms.Button otopark_durumu;
+        private System.Windows.Forms.Label tarih_saat;
+        private System.Windows.Forms.Label cikis;
+        private System.Windows.Forms.Button kayitli_kullanici_sil;
+        private System.Windows.Forms.PictureBox ayarlar;
     }
 }
 

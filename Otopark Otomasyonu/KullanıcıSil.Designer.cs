@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KullanıcıSil));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.kullanici_adi = new System.Windows.Forms.ComboBox();
+            this.kayitli_kullaniciyi_sil = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.geri_don = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.kullanici_adi);
+            this.groupBox1.Controls.Add(this.kayitli_kullaniciyi_sil);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
@@ -52,27 +52,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Sil";
             // 
-            // comboBox1
+            // kullanici_adi
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(253, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 38);
-            this.comboBox1.TabIndex = 0;
+            this.kullanici_adi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanici_adi.FormattingEnabled = true;
+            this.kullanici_adi.Location = new System.Drawing.Point(253, 45);
+            this.kullanici_adi.Name = "kullanici_adi";
+            this.kullanici_adi.Size = new System.Drawing.Size(212, 38);
+            this.kullanici_adi.TabIndex = 0;
             // 
-            // button10
+            // kayitli_kullaniciyi_sil
             // 
-            this.button10.BackColor = System.Drawing.Color.Navy;
-            this.button10.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(253, 118);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(212, 73);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Kayıtlı Kullanıcıyı Sil";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.kayitli_kullaniciyi_sil.BackColor = System.Drawing.Color.Navy;
+            this.kayitli_kullaniciyi_sil.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayitli_kullaniciyi_sil.ForeColor = System.Drawing.SystemColors.Control;
+            this.kayitli_kullaniciyi_sil.Location = new System.Drawing.Point(253, 118);
+            this.kayitli_kullaniciyi_sil.Name = "kayitli_kullaniciyi_sil";
+            this.kayitli_kullaniciyi_sil.Size = new System.Drawing.Size(212, 73);
+            this.kayitli_kullaniciyi_sil.TabIndex = 1;
+            this.kayitli_kullaniciyi_sil.Text = "Kayıtlı Kullanıcıyı Sil";
+            this.kayitli_kullaniciyi_sil.UseVisualStyleBackColor = false;
+            this.kayitli_kullaniciyi_sil.Click += new System.EventHandler(this.button10_Click);
             // 
             // label1
             // 
@@ -84,18 +84,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Kullanıcı Adı :";
             // 
-            // button8
+            // geri_don
             // 
-            this.button8.BackColor = System.Drawing.Color.Navy;
-            this.button8.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(921, 402);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(213, 69);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Geri Dön";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.geri_don.BackColor = System.Drawing.Color.Navy;
+            this.geri_don.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geri_don.ForeColor = System.Drawing.SystemColors.Control;
+            this.geri_don.Location = new System.Drawing.Point(921, 402);
+            this.geri_don.Name = "geri_don";
+            this.geri_don.Size = new System.Drawing.Size(213, 69);
+            this.geri_don.TabIndex = 2;
+            this.geri_don.Text = "Geri Dön";
+            this.geri_don.UseVisualStyleBackColor = false;
+            this.geri_don.Click += new System.EventHandler(this.button8_Click);
             // 
             // KullanıcıSil
             // 
@@ -105,7 +105,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1323, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.geri_don);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "KullanıcıSil";
@@ -120,9 +120,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button kayitli_kullaniciyi_sil;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox kullanici_adi;
+        private System.Windows.Forms.Button geri_don;
     }
 }
