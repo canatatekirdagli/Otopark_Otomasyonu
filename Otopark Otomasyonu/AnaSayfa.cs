@@ -86,5 +86,12 @@ namespace Otopark_Otomasyonu
             ayarlar.Show(this);
             Hide();
         }
+
+        private void oturum_kapat_Click(object sender, EventArgs e)
+        {
+            Giris1 giris1 = new Giris1();
+            giris1.Show(this);
+            Hide();
+        }
     }
 }

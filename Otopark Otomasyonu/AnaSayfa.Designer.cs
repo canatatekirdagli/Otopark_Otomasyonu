@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaSayfa));
             this.kayitli_arac_giris = new System.Windows.Forms.Button();
             this.arac_cikis = new System.Windows.Forms.Button();
@@ -37,7 +38,11 @@
             this.cikis = new System.Windows.Forms.Label();
             this.kayitli_kullanici_sil = new System.Windows.Forms.Button();
             this.ayarlar = new System.Windows.Forms.PictureBox();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.ımageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.oturum_kapat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oturum_kapat)).BeginInit();
             this.SuspendLayout();
             // 
             // kayitli_arac_giris
@@ -163,6 +168,30 @@
             this.ayarlar.TabStop = false;
             this.ayarlar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // ımageList2
+            // 
+            this.ımageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.ımageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.ımageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // oturum_kapat
+            // 
+            this.oturum_kapat.BackColor = System.Drawing.Color.Transparent;
+            this.oturum_kapat.Image = ((System.Drawing.Image)(resources.GetObject("oturum_kapat.Image")));
+            this.oturum_kapat.Location = new System.Drawing.Point(55, 447);
+            this.oturum_kapat.Name = "oturum_kapat";
+            this.oturum_kapat.Size = new System.Drawing.Size(119, 120);
+            this.oturum_kapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.oturum_kapat.TabIndex = 10;
+            this.oturum_kapat.TabStop = false;
+            this.oturum_kapat.Click += new System.EventHandler(this.oturum_kapat_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,6 +201,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1306, 579);
             this.ControlBox = false;
+            this.Controls.Add(this.oturum_kapat);
             this.Controls.Add(this.ayarlar);
             this.Controls.Add(this.kayitli_kullanici_sil);
             this.Controls.Add(this.cikis);
@@ -188,6 +218,7 @@
             this.TransparencyKey = System.Drawing.Color.DarkGray;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oturum_kapat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +234,9 @@
         private System.Windows.Forms.Label cikis;
         private System.Windows.Forms.Button kayitli_kullanici_sil;
         private System.Windows.Forms.PictureBox ayarlar;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.ImageList ımageList2;
+        private System.Windows.Forms.PictureBox oturum_kapat;
     }
 }
 

@@ -14,6 +14,8 @@ namespace Otopark_Otomasyonu
     {
         public string connectionString;
         SqlConnection connection;
+        SqlCommand command;
+        SqlDataReader reader;
         public DatabaseConnection()
         {
             connectionString = "Data Source=CAN-ATA;Initial Catalog=otopark_simulasyonu;Integrated Security = True";
@@ -45,6 +47,27 @@ namespace Otopark_Otomasyonu
             SqlCommand sqlCommand = new SqlCommand(query,connection);
             sqlCommand.ExecuteNonQuery();
             CloseConnection();
+        }
+        //Kaynakça https://www.youtube.com/watch?v=KylvxtIiokg
+        public void Login(string kullanici_adi,string sifre,Form form1)
+        {
+            command = new SqlCommand("Select * From giris where kullanici_adi='"+kullanici_adi+"'and sifre='"+sifre+"'",connection);
+            connection.Open();
+            reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                MessageBox.Show("Giriş başarılı!");
+                AnaSayfa anasayfa = new AnaSayfa();
+                anasayfa.Show();
+                form1.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
+            }
+            connection.Close();
+            connection.Dispose();
         }
     }
 }

@@ -33,11 +33,11 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kullanici_adi = new System.Windows.Forms.TextBox();
+            this.kullanici_adi1 = new System.Windows.Forms.TextBox();
             this.giris = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.sifre = new System.Windows.Forms.TextBox();
+            this.sifre1 = new System.Windows.Forms.TextBox();
             this.cikis = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,11 +50,11 @@
             this.groupBox4.Controls.Add(this.checkBox1);
             this.groupBox4.Controls.Add(this.pictureBox2);
             this.groupBox4.Controls.Add(this.pictureBox1);
-            this.groupBox4.Controls.Add(this.kullanici_adi);
+            this.groupBox4.Controls.Add(this.kullanici_adi1);
             this.groupBox4.Controls.Add(this.giris);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.sifre);
+            this.groupBox4.Controls.Add(this.sifre1);
             this.groupBox4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Location = new System.Drawing.Point(40, 35);
@@ -95,14 +95,14 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // kullanici_adi
+            // kullanici_adi1
             // 
-            this.kullanici_adi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kullanici_adi.Location = new System.Drawing.Point(323, 74);
-            this.kullanici_adi.Name = "kullanici_adi";
-            this.kullanici_adi.Size = new System.Drawing.Size(183, 34);
-            this.kullanici_adi.TabIndex = 0;
-            this.kullanici_adi.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.kullanici_adi1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanici_adi1.Location = new System.Drawing.Point(323, 74);
+            this.kullanici_adi1.Name = "kullanici_adi1";
+            this.kullanici_adi1.Size = new System.Drawing.Size(183, 34);
+            this.kullanici_adi1.TabIndex = 0;
+            this.kullanici_adi1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // giris
             // 
@@ -137,14 +137,14 @@
             this.label10.TabIndex = 6;
             this.label10.Text = "Kullanıcı Adı :";
             // 
-            // sifre
+            // sifre1
             // 
-            this.sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sifre.Location = new System.Drawing.Point(323, 143);
-            this.sifre.Name = "sifre";
-            this.sifre.Size = new System.Drawing.Size(183, 34);
-            this.sifre.TabIndex = 1;
-            this.sifre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.sifre1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre1.Location = new System.Drawing.Point(323, 143);
+            this.sifre1.Name = "sifre1";
+            this.sifre1.Size = new System.Drawing.Size(183, 34);
+            this.sifre1.TabIndex = 1;
+            this.sifre1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // cikis
             // 
@@ -190,10 +190,10 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox sifre;
+        private System.Windows.Forms.TextBox sifre1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox kullanici_adi;
+        private System.Windows.Forms.TextBox kullanici_adi1;
         private System.Windows.Forms.Button giris;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label cikis;

@@ -27,27 +27,16 @@ namespace Otopark_Otomasyonu
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (kullanici_adi.Text == "" || sifre.Text == "")
+            DatabaseConnection connection = new DatabaseConnection();
+            if (kullanici_adi1.Text == "" || sifre1.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı ve/veya şifre boş geçilemez.");
             }
             else
             {
-                SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM giris WHERE kullanici_adi = '{0}' AND sifre = '{1}'", kullanici_adi.Text, sifre.Text));
-                
-                    if(reader.HasRows == true)
-                    {
-                        AnaSayfa anasayfa = new AnaSayfa();
-                        anasayfa.Show();
-                        Hide();
-                    //ASas
-                    }
-                    else
-                    {
-                        MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
-                    }
-                //asdasd
-              connection.CloseConnection();
+                string kullanici_adi = kullanici_adi1.Text;
+                string sifre = sifre1.Text;
+                connection.Login(kullanici_adi, sifre, this);
               
             }
            
@@ -64,17 +53,17 @@ namespace Otopark_Otomasyonu
         {
             if (checkBox1.CheckState==CheckState.Checked)
             {
-                sifre.UseSystemPasswordChar = false;
+                sifre1.UseSystemPasswordChar = false;
             }
             else
             {
-                sifre.UseSystemPasswordChar = true;
+                sifre1.UseSystemPasswordChar = true;
             }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            sifre.UseSystemPasswordChar=true;
+            sifre1.UseSystemPasswordChar=true;
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -87,11 +76,11 @@ namespace Otopark_Otomasyonu
 
         private void Giris_Enter(object sender, EventArgs e)
         {
-            if (kullanici_adi.Text == "" || sifre.Text == "")
+            if (kullanici_adi1.Text == "" || sifre1.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı ve/veya şifre boş geçilemez.");
             }
-            else if (kullanici_adi.Text == "admin" && sifre.Text == "12345")
+            else if (kullanici_adi1.Text == "admin" && sifre1.Text == "12345")
             {
                 AnaSayfa anasayfa = new AnaSayfa();
                 anasayfa.Show();
