@@ -20,7 +20,7 @@ namespace Otopark_Otomasyonu
         DatabaseConnection connection = new DatabaseConnection();
         private void Giris_Load(object sender, EventArgs e)
         {
-            
+            //deneme
             
         }
 
@@ -40,6 +40,7 @@ namespace Otopark_Otomasyonu
                         AnaSayfa anasayfa = new AnaSayfa();
                         anasayfa.Show();
                         Hide();
+                    //ASas
                     }
                     else
                     {
