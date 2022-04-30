@@ -36,8 +36,7 @@ namespace Otopark_Otomasyonu
             {
                 string kullanici_adi = kullanici_adi1.Text;
                 string sifre = sifre1.Text;
-                connection.Login(kullanici_adi, sifre, this);
-              
+                connection.Login(kullanici_adi, sifre, this);              
             }
            
 
@@ -74,23 +73,7 @@ namespace Otopark_Otomasyonu
 
         
 
-        private void Giris_Enter(object sender, EventArgs e)
-        {
-            if (kullanici_adi1.Text == "" || sifre1.Text == "")
-            {
-                MessageBox.Show("Kullanıcı adı ve/veya şifre boş geçilemez.");
-            }
-            else if (kullanici_adi1.Text == "admin" && sifre1.Text == "12345")
-            {
-                AnaSayfa anasayfa = new AnaSayfa();
-                anasayfa.Show();
-                Hide();
-            }
-            else
-            {
-                MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
-            }
-        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

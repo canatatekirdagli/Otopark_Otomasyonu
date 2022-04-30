@@ -49,7 +49,7 @@ namespace Otopark_Otomasyonu
             CloseConnection();
         }
         //Kaynakça https://www.youtube.com/watch?v=KylvxtIiokg
-        public void Login(string kullanici_adi,string sifre,Form form1)
+        public void Login(string kullanici_adi,string sifre,Form form1)//Giriş Ekranı
         {
             command = new SqlCommand("Select * From giris where kullanici_adi='"+kullanici_adi+"'and sifre='"+sifre+"'",connection);
             connection.Open();
@@ -68,6 +68,35 @@ namespace Otopark_Otomasyonu
             }
             connection.Close();
             connection.Dispose();
+        }
+        public void yeniKullanici(TextBox ad_soyad,TextBox kullanici_adi,TextBox sifre)//Yeni Kullanıcı Ekleme
+        {
+            try
+            {
+                connection.Open();
+                command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "insert into giris values('" + kullanici_adi.Text + "','" + sifre.Text + "','" + ad_soyad.Text + "')";
+                command.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Üye Eklendi!");
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+            }
+        }
+        public void sifreDegistir(ComboBox ad_soyad,TextBox mevcut_sifre,TextBox yeni_sifre)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

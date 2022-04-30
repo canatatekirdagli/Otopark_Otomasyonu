@@ -176,7 +176,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GİRİŞ";
             this.Load += new System.EventHandler(this.Giris_Load);
-            this.Enter += new System.EventHandler(this.Giris_Enter);
+           
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

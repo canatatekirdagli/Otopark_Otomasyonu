@@ -111,6 +111,7 @@
             this.Name = "KullanıcıSil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KULLANICI SİL";
+            this.Load += new System.EventHandler(this.KullanıcıSil_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

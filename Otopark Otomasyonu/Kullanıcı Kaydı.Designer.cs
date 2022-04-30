@@ -223,6 +223,7 @@
             this.marka.Name = "marka";
             this.marka.Size = new System.Drawing.Size(183, 38);
             this.marka.TabIndex = 6;
+            this.marka.SelectedIndexChanged += new System.EventHandler(this.marka_SelectedIndexChanged);
             // 
             // renk
             // 
