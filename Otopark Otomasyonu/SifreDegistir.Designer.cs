@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kullanici_adi = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.sifre_degistir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.kullanici_adi);
-            this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.sifre_degistir);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
@@ -118,18 +118,18 @@
             this.kullanici_adi.Size = new System.Drawing.Size(212, 38);
             this.kullanici_adi.TabIndex = 0;
             // 
-            // button10
+            // sifre_degistir
             // 
-            this.button10.BackColor = System.Drawing.Color.Navy;
-            this.button10.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(380, 258);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(212, 73);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "sifre_degistir";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.sifre_degistir.BackColor = System.Drawing.Color.Navy;
+            this.sifre_degistir.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre_degistir.ForeColor = System.Drawing.SystemColors.Control;
+            this.sifre_degistir.Location = new System.Drawing.Point(380, 258);
+            this.sifre_degistir.Name = "sifre_degistir";
+            this.sifre_degistir.Size = new System.Drawing.Size(212, 73);
+            this.sifre_degistir.TabIndex = 3;
+            this.sifre_degistir.Text = "Şifre Değiştir";
+            this.sifre_degistir.UseVisualStyleBackColor = false;
+            this.sifre_degistir.Click += new System.EventHandler(this.button10_Click);
             // 
             // label1
             // 
@@ -155,6 +155,7 @@
             this.Name = "SifreDegistir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ŞİFRE DEĞİŞTİR";
+            this.Load += new System.EventHandler(this.SifreDegistir_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -166,7 +167,7 @@
         private System.Windows.Forms.Button geri_don;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox kullanici_adi;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button sifre_degistir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

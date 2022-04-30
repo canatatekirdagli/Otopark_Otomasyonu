@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,17 @@ namespace Otopark_Otomasyonu
             Ayarlar ayarlar=new Ayarlar();
             ayarlar.Show(this);
             Hide();
+        }
+
+        private void SifreDegistir_Load(object sender, EventArgs e)
+        {
+            DatabaseConnection connection = new DatabaseConnection();
+            SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM giris", connection));
+            while (reader.Read())
+            {
+                kullanici_adi.Items.Add(reader["kullanici_adi"]);
+            }
+            connection.CloseConnection();
         }
     }
 }
