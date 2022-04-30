@@ -15,7 +15,7 @@ namespace Otopark_Otomasyonu
     {
         public KullanıcıSil()
         {
-            InitializeComponent();
+            InitializeComponent();//////mhgchgfxchgcghc
         }
 
         private void button8_Click(object sender, EventArgs e)
