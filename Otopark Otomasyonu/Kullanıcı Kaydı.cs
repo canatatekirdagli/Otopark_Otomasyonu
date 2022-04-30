@@ -92,7 +92,7 @@ namespace Otopark_Otomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ///
+           
         }
 
         private void marka_SelectedIndexChanged(object sender, EventArgs e)
