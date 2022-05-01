@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Otopark_Otomasyonu
 {
-    public partial class KullanıcıSil : Form
+    public partial class AdminSil : Form
     {
-        public KullanıcıSil()
+        public AdminSil()
         {
             InitializeComponent();
         }

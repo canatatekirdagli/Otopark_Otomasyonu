@@ -33,14 +33,14 @@ namespace Otopark_Otomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
-            KullanıcıEkle kullanıcıEkle = new KullanıcıEkle();
+            AdminEkle kullanıcıEkle = new AdminEkle();
             kullanıcıEkle.Show(this);
             Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            KullanıcıSil kullanıcıSil=new KullanıcıSil();
+            AdminSil kullanıcıSil=new AdminSil();
             kullanıcıSil.Show(this);
             Hide();
         }

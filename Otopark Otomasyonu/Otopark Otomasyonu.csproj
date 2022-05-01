@@ -132,17 +132,17 @@
     <Compile Include="Kullanıcı Kaydı.Designer.cs">
       <DependentUpon>Kullanıcı Kaydı.cs</DependentUpon>
     </Compile>
-    <Compile Include="KullanıcıEkle.cs">
+    <Compile Include="AdminEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KullanıcıEkle.Designer.cs">
-      <DependentUpon>KullanıcıEkle.cs</DependentUpon>
+    <Compile Include="AdminEkle.Designer.cs">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="KullanıcıSil.cs">
+    <Compile Include="AdminSil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KullanıcıSil.Designer.cs">
-      <DependentUpon>KullanıcıSil.cs</DependentUpon>
+    <Compile Include="AdminSil.Designer.cs">
+      <DependentUpon>AdminSil.cs</DependentUpon>
     </Compile>
     <Compile Include="OtoparkDurumu.cs">
       <SubType>Form</SubType>
@@ -179,11 +179,11 @@
     <EmbeddedResource Include="Kullanıcı Kaydı.resx">
       <DependentUpon>Kullanıcı Kaydı.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KullanıcıEkle.resx">
-      <DependentUpon>KullanıcıEkle.cs</DependentUpon>
+    <EmbeddedResource Include="AdminEkle.resx">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KullanıcıSil.resx">
-      <DependentUpon>KullanıcıSil.cs</DependentUpon>
+    <EmbeddedResource Include="AdminSil.resx">
+      <DependentUpon>AdminSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OtoparkDurumu.resx">
       <DependentUpon>OtoparkDurumu.cs</DependentUpon>

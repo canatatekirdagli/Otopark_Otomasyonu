@@ -69,21 +69,35 @@ namespace Otopark_Otomasyonu
             connection.Close();
             connection.Dispose();
         }
-        public void yeniKullanici(TextBox ad_soyad,TextBox kullanici_adi,TextBox sifre)//Yeni Kullanıcı Ekleme
+        public void yeniAdmin(TextBox ad_soyad,TextBox kullanici_adi,TextBox sifre,Form form)//Yeni Admin Ekleme
         {
             try
             {
-                connection.Open();
-                command = new SqlCommand();
-                command.Connection = connection;
-                command.CommandText = "insert into giris values('" + kullanici_adi.Text + "','" + sifre.Text + "','" + ad_soyad.Text + "')";
-                command.ExecuteNonQuery();
-                connection.Close();
-                MessageBox.Show("Üye Eklendi!");
+                if (ad_soyad.Text==""||kullanici_adi.Text==""||sifre.Text=="")
+                {
+                    MessageBox.Show("Lütfen tüm boşlukları doldurunuz.");
+                }
+                else if (sifre.TextLength<3)
+                {
+                    MessageBox.Show("Şifreniz minimum 3 karakterden oluşmalıdır!!");
+                }
+                else
+                {
+                    connection.Open();
+                    command = new SqlCommand();
+                    command.Connection = connection;
+                    command.CommandText = "insert into giris values('" + kullanici_adi.Text + "','" + sifre.Text + "','" + ad_soyad.Text + "')";
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    MessageBox.Show("Üye Eklendi!");
+                    AnaSayfa anasayfa = new AnaSayfa();
+                    anasayfa.Show();
+                    form.Hide();
+                }
             }
-            catch (Exception hata)
+            catch (Exception)
             {
-                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+                MessageBox.Show("Bu kullanıcı adı kullanılmaktadır. Lütfen farklı kullanıcı adıyla deneyiniz.");
             }
         }
 

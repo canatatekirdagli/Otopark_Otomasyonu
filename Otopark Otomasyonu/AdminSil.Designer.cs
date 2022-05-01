@@ -1,6 +1,6 @@
 ﻿namespace Otopark_Otomasyonu
 {
-    partial class KullanıcıSil
+    partial class AdminSil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KullanıcıSil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminSil));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.kullanici_adi = new System.Windows.Forms.ComboBox();
             this.kayitli_kullaniciyi_sil = new System.Windows.Forms.Button();

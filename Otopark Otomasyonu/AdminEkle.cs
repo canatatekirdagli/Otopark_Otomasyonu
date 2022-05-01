@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Otopark_Otomasyonu
 {
-    public partial class KullanıcıEkle : Form
+    public partial class AdminEkle : Form
     {
-        public KullanıcıEkle()
+        public AdminEkle()
         {
             InitializeComponent();
         }
@@ -21,10 +21,8 @@ namespace Otopark_Otomasyonu
         private void button10_Click(object sender, EventArgs e)
         {
             DatabaseConnection connection = new DatabaseConnection();
-            connection.yeniKullanici(ad_soyad,kullanici_adi,sifre);
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show(this);
-            Hide();
+            connection.yeniAdmin(ad_soyad,kullanici_adi,sifre,this);
+          
         }
 
         private void button8_Click(object sender, EventArgs e)
