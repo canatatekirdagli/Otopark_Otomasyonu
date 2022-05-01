@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanıcı_Kaydı));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.telefon = new System.Windows.Forms.MaskedTextBox();
-            this.tc = new System.Windows.Forms.MaskedTextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.soyad = new System.Windows.Forms.TextBox();
             this.ad = new System.Windows.Forms.TextBox();
@@ -52,6 +50,8 @@
             this.plaka = new System.Windows.Forms.TextBox();
             this.kayit = new System.Windows.Forms.Button();
             this.geri_don = new System.Windows.Forms.Button();
+            this.tc = new System.Windows.Forms.TextBox();
+            this.telefon = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -78,24 +78,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişi Bilgileri";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // telefon
-            // 
-            this.telefon.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.telefon.Location = new System.Drawing.Point(253, 221);
-            this.telefon.Mask = "(999) 000-0000";
-            this.telefon.Name = "telefon";
-            this.telefon.Size = new System.Drawing.Size(212, 34);
-            this.telefon.TabIndex = 3;
-            // 
-            // tc
-            // 
-            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tc.Location = new System.Drawing.Point(253, 45);
-            this.tc.Mask = "00000000000";
-            this.tc.Name = "tc";
-            this.tc.Size = new System.Drawing.Size(212, 34);
-            this.tc.TabIndex = 0;
             // 
             // email
             // 
@@ -307,6 +289,22 @@
             this.geri_don.UseVisualStyleBackColor = false;
             this.geri_don.Click += new System.EventHandler(this.button10_Click);
             // 
+            // tc
+            // 
+            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Location = new System.Drawing.Point(253, 45);
+            this.tc.Name = "tc";
+            this.tc.Size = new System.Drawing.Size(212, 34);
+            this.tc.TabIndex = 0;
+            // 
+            // telefon
+            // 
+            this.telefon.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.telefon.Location = new System.Drawing.Point(253, 222);
+            this.telefon.Name = "telefon";
+            this.telefon.Size = new System.Drawing.Size(212, 34);
+            this.telefon.TabIndex = 4;
+            // 
             // Kullanıcı_Kaydı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,7 +355,7 @@
         private System.Windows.Forms.TextBox plaka;
         private System.Windows.Forms.Button kayit;
         private System.Windows.Forms.Button geri_don;
-        private System.Windows.Forms.MaskedTextBox telefon;
-        private System.Windows.Forms.MaskedTextBox tc;
+        private System.Windows.Forms.TextBox telefon;
+        private System.Windows.Forms.TextBox tc;
     }
 }

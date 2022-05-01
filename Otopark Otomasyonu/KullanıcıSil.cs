@@ -15,7 +15,7 @@ namespace Otopark_Otomasyonu
     {
         public KullanıcıSil()
         {
-            InitializeComponent();//////mhgchgfxchgcghc
+            InitializeComponent();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -27,6 +27,8 @@ namespace Otopark_Otomasyonu
 
         private void button10_Click(object sender, EventArgs e)
         {
+            DatabaseConnection connection = new DatabaseConnection();
+           
             MessageBox.Show("Kullanıcı silindi!");
             AnaSayfa anaSayfa = new AnaSayfa();
             anaSayfa.Show(this);

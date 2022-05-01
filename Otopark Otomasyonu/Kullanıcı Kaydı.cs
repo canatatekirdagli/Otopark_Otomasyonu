@@ -45,26 +45,40 @@ namespace Otopark_Otomasyonu
         {
 
             DatabaseConnection connection = new DatabaseConnection();
-            //kaynakça https://www.kodlamamerkezi.com/c-net/c-ile-sql-server-veritabanina-kayit-ekleme/comment-page-1/#comment-9236
-            connection.OpenConnection();
-            string kayit = "insert into musteriler(tc_kimlik_no,ad,soyad,telefon,email,plaka,marka,renk,parkyeri) values (@tc_kimlik_no,@ad,@soyad,@telefon,@email,@plaka,@marka,@renk,@parkyeri)";
-            SqlCommand command = new SqlCommand(kayit);
-            command.Parameters.AddWithValue("@tc_kimlik_no", tc.Text);
-            command.Parameters.AddWithValue("@ad", ad.Text);
-            command.Parameters.AddWithValue("@soyad", soyad.Text);
-            command.Parameters.AddWithValue("@telefon", telefon.Text);
-            command.Parameters.AddWithValue("@email", email.Text);
-            command.Parameters.AddWithValue("@plaka", plaka.Text);
-            command.Parameters.AddWithValue("@marka", marka.Text);
-            command.Parameters.AddWithValue("@renk", renk.Text);
-            command.Parameters.AddWithValue("@parkyeri", park_yeri.Text);
-            command.ExecuteNonQuery();
-            //Veritabanında değişiklik yapacak komut işlemi bu satırda gerçekleşiyor.
-            connection.CloseConnection();
-            MessageBox.Show("Müşteri Kayıt İşlemi Gerçekleşti.");
-            OtoparkDurumu otoparkDurumu = new OtoparkDurumu();
-            otoparkDurumu.Show();
-            Hide();
+            //kaynakça https://www.kodlamamerkezi.com/c-net/c-ile-sql-server-veritabanina-kayit-ekleme/comment-page-1/#comment-9236  ----- https://www.youtube.com/watch?v=45tftN9IeQ0
+            try
+            {
+                if (plaka.Text==""|| renk.Text == "" || park_yeri.Text == "" || marka.Text == "" || tc.Text == "" ||
+                    ad.Text == "" || soyad.Text == "" || telefon.Text == "" || email.Text == "")
+                {
+                    MessageBox.Show("Lütfen boş kısımları doldurunuz!!");
+                }else if (tc.TextLength < 11|| tc.TextLength>11)
+                {
+                    MessageBox.Show("Lütfen 11 haneli TC Kimlik numaranızı giriniz!!");
+                }else if (telefon.TextLength < 10||telefon.TextLength>10)
+                {
+                    MessageBox.Show("Lütfen telefon numaranızı başında 0 olmadan 10 haneli olarak giriniz.");
+                }
+                else
+                {
+                    connection.SqlProcess("insert into araba(plaka,renk,park_yeri,marka) values ('" + plaka.Text + "','" + renk.Text + "','" + park_yeri.Text + "'," +
+    "'" + marka.Text.ToString() + "')");
+                    connection.SqlProcess("insert into musteri(tc_kimlik_no,ad,soyad,telefon,email,plaka) values ('" + tc.Text + "','" + ad.Text + "','" + soyad.Text + "'," +
+        "'" + telefon.Text.ToString() + "','" + email.Text + "','" + plaka.Text + "')");
+                    MessageBox.Show("Müşteri Kayıt İşlemi Gerçekleşti.");
+
+                    OtoparkDurumu otoparkDurumu = new OtoparkDurumu();
+                    otoparkDurumu.Show();
+                    Hide();
+                }
+                
+            }
+            catch (Exception hata)
+            {
+
+                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+            }
+
         }
 
         private void button10_Click(object sender, EventArgs e)
