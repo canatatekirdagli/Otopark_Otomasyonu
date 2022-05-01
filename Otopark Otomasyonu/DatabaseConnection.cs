@@ -86,17 +86,6 @@ namespace Otopark_Otomasyonu
                 MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
             }
         }
-        public void sifreDegistir(ComboBox ad_soyad,TextBox mevcut_sifre,TextBox yeni_sifre)
-        {
-            try
-            {
 
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
     }
 }
