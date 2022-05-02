@@ -191,6 +191,7 @@
             this.plaka.Name = "plaka";
             this.plaka.Size = new System.Drawing.Size(183, 38);
             this.plaka.TabIndex = 0;
+            this.plaka.SelectedIndexChanged += new System.EventHandler(this.plaka_SelectedIndexChanged);
             // 
             // label7
             // 

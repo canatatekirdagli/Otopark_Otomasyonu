@@ -36,21 +36,24 @@ namespace Otopark_Otomasyonu
                 }
                 else
                 {
-                    SqlDataReader reader = connection.DataReader("select  * from musteri where tc_kimlik_no='" + tc.Text + "'");
-                    DialogResult sonuc;
-                    sonuc = MessageBox.Show("Müşteriyi silmek istediğinize emin misiniz?", "Kullanıcıyı sil", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (sonuc == DialogResult.No)
-                    {
-                    }
-                    if (sonuc == DialogResult.Yes)
-                    {
-                        connection.CloseConnection();
-                        connection.SqlProcess("DELETE from musteri where tc_kimlik_no='" + tc.Text + "'");
-                        MessageBox.Show("Müşteri silindi!");
-                        AnaSayfa anaSayfa = new AnaSayfa();
-                        anaSayfa.Show(this);
-                        Hide();
-                    }
+                    SqlDataReader reader = connection.DataReader("select  * from musteri where tc_kimlik_no='" + tc.Text.ToString() + "' and plaka='" + plaka.Text.ToString() + "'");
+                        DialogResult sonuc;
+                        sonuc = MessageBox.Show("Müşteriyi silmek istediğinize emin misiniz?", "Kullanıcıyı sil", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (sonuc == DialogResult.No)
+                        {
+                        }
+                        if (sonuc == DialogResult.Yes)
+                        {
+                            connection.CloseConnection();
+                            connection.SqlProcess("DELETE from musteri where tc_kimlik_no='" + tc.Text + "'");
+                            connection.SqlProcess("DELETE from araba where plaka='" + plaka.Text + "'");
+                            MessageBox.Show("Müşteri silindi!");
+                            AnaSayfa anaSayfa = new AnaSayfa();
+                            anaSayfa.Show(this);
+                            Hide();
+                        }
+                    
+
                 }
             }
             catch (Exception hata)
