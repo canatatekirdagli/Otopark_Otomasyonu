@@ -20,10 +20,28 @@ namespace Otopark_Otomasyonu
 
         private void button10_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Şifre başarıyla değiştirildi!");
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show(this);
-            Hide();
+            DatabaseConnection connection = new DatabaseConnection();
+            SqlDataReader reader = connection.DataReader("select  * from giris where kullanici_adi='" + kullanici_adi.Text + "'");
+            try
+            {
+                if (kullanici_adi.Text == "" || yeni_sifre.Text == "")
+                {
+                    MessageBox.Show("Boş olan kısımları doldurunuz!");
+                }
+                else
+                {
+                    connection.CloseConnection();
+                    connection.SqlProcess("update giris set sifre='" + yeni_sifre.Text.ToString() + "' where kullanici_adi='" + kullanici_adi.Text + "'");
+                    MessageBox.Show("Şifre başarıyla değiştirildi!");
+                    AnaSayfa anaSayfa = new AnaSayfa();
+                    anaSayfa.Show(this);
+                    Hide();
+                }
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)

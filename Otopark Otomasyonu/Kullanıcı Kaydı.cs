@@ -106,7 +106,17 @@ namespace Otopark_Otomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            DatabaseConnection connection = new DatabaseConnection();
+            if (marka.Text == "")
+            {
+                MessageBox.Show("Lütfen markayı giriniz!!");
+            }
+            else
+            {
+                connection.SqlProcess("insert into marka(marka) values ('" + marka.Text.ToString() + "')");
+                MessageBox.Show("Marka eklendi!!");
+                marka.Items.Add(marka.Text.ToString());
+            }
         }
 
         private void marka_SelectedIndexChanged(object sender, EventArgs e)

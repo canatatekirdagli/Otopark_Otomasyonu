@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayıtlıKullanıcıSil));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.kayitli_kullanici_sil = new System.Windows.Forms.Button();
-            this.tc = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.geri_don = new System.Windows.Forms.Button();
+            this.tc = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
-            this.groupBox1.Controls.Add(this.kayitli_kullanici_sil);
             this.groupBox1.Controls.Add(this.tc);
+            this.groupBox1.Controls.Add(this.kayitli_kullanici_sil);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
@@ -63,15 +63,7 @@
             this.kayitli_kullanici_sil.TabIndex = 1;
             this.kayitli_kullanici_sil.Text = "Kayıtlı Kullanıcıyı Sil";
             this.kayitli_kullanici_sil.UseVisualStyleBackColor = false;
-            // 
-            // tc
-            // 
-            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tc.Location = new System.Drawing.Point(253, 45);
-            this.tc.Mask = "00000000000";
-            this.tc.Name = "tc";
-            this.tc.Size = new System.Drawing.Size(212, 34);
-            this.tc.TabIndex = 0;
+            this.kayitli_kullanici_sil.Click += new System.EventHandler(this.kayitli_kullanici_sil_Click);
             // 
             // label1
             // 
@@ -95,6 +87,14 @@
             this.geri_don.Text = "Geri Dön";
             this.geri_don.UseVisualStyleBackColor = false;
             this.geri_don.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // tc
+            // 
+            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Location = new System.Drawing.Point(253, 45);
+            this.tc.Name = "tc";
+            this.tc.Size = new System.Drawing.Size(212, 34);
+            this.tc.TabIndex = 0;
             // 
             // KayıtlıKullanıcıSil
             // 
@@ -120,8 +120,8 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button kayitli_kullanici_sil;
-        private System.Windows.Forms.MaskedTextBox tc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button geri_don;
+        private System.Windows.Forms.TextBox tc;
     }
 }

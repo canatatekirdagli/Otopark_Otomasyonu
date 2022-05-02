@@ -32,9 +32,7 @@
             this.geri_don = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.yeni_sifre = new System.Windows.Forms.TextBox();
-            this.mevcut_sifre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.kullanici_adi = new System.Windows.Forms.ComboBox();
             this.sifre_degistir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,9 +56,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
             this.groupBox1.Controls.Add(this.yeni_sifre);
-            this.groupBox1.Controls.Add(this.mevcut_sifre);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.kullanici_adi);
             this.groupBox1.Controls.Add(this.sifre_degistir);
             this.groupBox1.Controls.Add(this.label1);
@@ -76,44 +72,26 @@
             // yeni_sifre
             // 
             this.yeni_sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.yeni_sifre.Location = new System.Drawing.Point(253, 167);
+            this.yeni_sifre.Location = new System.Drawing.Point(322, 138);
             this.yeni_sifre.Name = "yeni_sifre";
             this.yeni_sifre.Size = new System.Drawing.Size(212, 34);
             this.yeni_sifre.TabIndex = 2;
-            // 
-            // mevcut_sifre
-            // 
-            this.mevcut_sifre.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mevcut_sifre.Location = new System.Drawing.Point(253, 106);
-            this.mevcut_sifre.Name = "mevcut_sifre";
-            this.mevcut_sifre.Size = new System.Drawing.Size(212, 34);
-            this.mevcut_sifre.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(44, 171);
+            this.label3.Location = new System.Drawing.Point(113, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 30);
             this.label3.TabIndex = 17;
             this.label3.Text = "Yeni Şifre :";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(18, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 30);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Mevcut Şifre :";
-            // 
             // kullanici_adi
             // 
             this.kullanici_adi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kullanici_adi.FormattingEnabled = true;
-            this.kullanici_adi.Location = new System.Drawing.Point(253, 45);
+            this.kullanici_adi.Location = new System.Drawing.Point(322, 76);
             this.kullanici_adi.Name = "kullanici_adi";
             this.kullanici_adi.Size = new System.Drawing.Size(212, 38);
             this.kullanici_adi.TabIndex = 0;
@@ -123,7 +101,7 @@
             this.sifre_degistir.BackColor = System.Drawing.Color.Navy;
             this.sifre_degistir.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sifre_degistir.ForeColor = System.Drawing.SystemColors.Control;
-            this.sifre_degistir.Location = new System.Drawing.Point(380, 258);
+            this.sifre_degistir.Location = new System.Drawing.Point(322, 193);
             this.sifre_degistir.Name = "sifre_degistir";
             this.sifre_degistir.Size = new System.Drawing.Size(212, 73);
             this.sifre_degistir.TabIndex = 3;
@@ -135,7 +113,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(5, 45);
+            this.label1.Location = new System.Drawing.Point(74, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 30);
             this.label1.TabIndex = 1;
@@ -170,8 +148,6 @@
         private System.Windows.Forms.Button sifre_degistir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox yeni_sifre;
-        private System.Windows.Forms.TextBox mevcut_sifre;
     }
 }

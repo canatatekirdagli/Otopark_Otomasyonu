@@ -28,11 +28,28 @@ namespace Otopark_Otomasyonu
         private void button10_Click(object sender, EventArgs e)
         {
             DatabaseConnection connection = new DatabaseConnection();
-           
-            MessageBox.Show("Kullanıcı silindi!");
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show(this);
-            Hide();
+            try
+            {
+                SqlDataReader reader = connection.DataReader("select  * from giris where kullanici_adi='" + kullanici_adi.Text + "'");
+                DialogResult sonuc;
+                sonuc = MessageBox.Show("Kullanıcıyı silmek istediğinize emin misiniz?", "Kullanıcıyı sil", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (sonuc == DialogResult.No)
+                {
+                }
+                if (sonuc == DialogResult.Yes)
+                {
+                    connection.CloseConnection();
+                    connection.SqlProcess("DELETE from giris where kullanici_adi='" + kullanici_adi.Text + "'");
+                    MessageBox.Show("Kullanıcı silindi!");
+                    AnaSayfa anaSayfa = new AnaSayfa();
+                    anaSayfa.Show(this);
+                    Hide();
+                }
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+            }
         }
 
         private void KullanıcıSil_Load(object sender, EventArgs e)
