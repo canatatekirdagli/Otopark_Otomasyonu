@@ -61,5 +61,11 @@ namespace Otopark_Otomasyonu
             }
             connection.CloseConnection();
         }
+
+
+        private void yeni_sifre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }

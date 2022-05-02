@@ -31,5 +31,11 @@ namespace Otopark_Otomasyonu
             ayarlar.Show(this);
             Hide();
         }
+
+        private void ad_soyad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
+                && !char.IsSeparator(e.KeyChar);
+        }
     }
 }

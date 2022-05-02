@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminEkle));
             this.geri_don = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ad_soyad = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.sifre = new System.Windows.Forms.TextBox();
             this.kullanici_sil = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.kullanici_adi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ad_soyad = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,25 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Ekle";
+            // 
+            // ad_soyad
+            // 
+            this.ad_soyad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ad_soyad.Location = new System.Drawing.Point(292, 63);
+            this.ad_soyad.Name = "ad_soyad";
+            this.ad_soyad.Size = new System.Drawing.Size(212, 34);
+            this.ad_soyad.TabIndex = 0;
+            this.ad_soyad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ad_soyad_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(118, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 30);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Ad Soyad:";
             // 
             // sifre
             // 
@@ -122,25 +141,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Kullanıcı Adı :";
             // 
-            // ad_soyad
-            // 
-            this.ad_soyad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ad_soyad.Location = new System.Drawing.Point(292, 63);
-            this.ad_soyad.Name = "ad_soyad";
-            this.ad_soyad.Size = new System.Drawing.Size(212, 34);
-            this.ad_soyad.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(118, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 30);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Ad Soyad:";
-            // 
-            // KullanıcıEkle
+            // AdminEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +152,7 @@
             this.Controls.Add(this.geri_don);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
-            this.Name = "KullanıcıEkle";
+            this.Name = "AdminEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KULLANICI EKLE";
             this.groupBox1.ResumeLayout(false);

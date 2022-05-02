@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Araç_Çıkışcs));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tc_kimlik = new System.Windows.Forms.MaskedTextBox();
+            this.tc = new System.Windows.Forms.TextBox();
             this.park_yeri = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.plaka = new System.Windows.Forms.TextBox();
@@ -67,7 +67,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Navy;
-            this.groupBox3.Controls.Add(this.tc_kimlik);
+            this.groupBox3.Controls.Add(this.tc);
             this.groupBox3.Controls.Add(this.park_yeri);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.plaka);
@@ -88,14 +88,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Müşteri Bilgileri";
             // 
-            // tc_kimlik
+            // tc
             // 
-            this.tc_kimlik.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tc_kimlik.Location = new System.Drawing.Point(275, 114);
-            this.tc_kimlik.Mask = "00000000000";
-            this.tc_kimlik.Name = "tc_kimlik";
-            this.tc_kimlik.Size = new System.Drawing.Size(183, 34);
-            this.tc_kimlik.TabIndex = 1;
+            this.tc.Enabled = false;
+            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Location = new System.Drawing.Point(275, 118);
+            this.tc.Name = "tc";
+            this.tc.Size = new System.Drawing.Size(183, 34);
+            this.tc.TabIndex = 1;
             // 
             // park_yeri
             // 
@@ -119,6 +119,7 @@
             // 
             // plaka
             // 
+            this.plaka.Enabled = false;
             this.plaka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.plaka.Location = new System.Drawing.Point(648, 114);
             this.plaka.Name = "plaka";
@@ -137,6 +138,7 @@
             // 
             // marka
             // 
+            this.marka.Enabled = false;
             this.marka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.marka.Location = new System.Drawing.Point(648, 53);
             this.marka.Name = "marka";
@@ -145,6 +147,7 @@
             // 
             // soyad
             // 
+            this.soyad.Enabled = false;
             this.soyad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.soyad.Location = new System.Drawing.Point(648, 182);
             this.soyad.Name = "soyad";
@@ -153,6 +156,7 @@
             // 
             // ad
             // 
+            this.ad.Enabled = false;
             this.ad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ad.Location = new System.Drawing.Point(275, 179);
             this.ad.Name = "ad";
@@ -247,6 +251,7 @@
             // 
             // park_yeri2
             // 
+            this.park_yeri2.Enabled = false;
             this.park_yeri2.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.park_yeri2.Location = new System.Drawing.Point(214, 143);
             this.park_yeri2.Name = "park_yeri2";
@@ -455,6 +460,6 @@
         private System.Windows.Forms.Label sure;
         private System.Windows.Forms.Label cikis_tarihi;
         private System.Windows.Forms.Label giris_tarihi;
-        private System.Windows.Forms.MaskedTextBox tc_kimlik;
+        private System.Windows.Forms.TextBox tc;
     }
 }

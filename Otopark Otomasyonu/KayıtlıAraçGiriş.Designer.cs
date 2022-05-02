@@ -31,8 +31,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayıtlıAraçGiriş));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tc = new System.Windows.Forms.MaskedTextBox();
-            this.telefon = new System.Windows.Forms.MaskedTextBox();
+            this.telefon = new System.Windows.Forms.TextBox();
+            this.tc = new System.Windows.Forms.TextBox();
             this.geri_don = new System.Windows.Forms.Button();
             this.kayitli_arac_giris = new System.Windows.Forms.Button();
             this.park_yeri = new System.Windows.Forms.ComboBox();
@@ -55,8 +55,8 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Navy;
-            this.groupBox3.Controls.Add(this.tc);
             this.groupBox3.Controls.Add(this.telefon);
+            this.groupBox3.Controls.Add(this.tc);
             this.groupBox3.Controls.Add(this.geri_don);
             this.groupBox3.Controls.Add(this.kayitli_arac_giris);
             this.groupBox3.Controls.Add(this.park_yeri);
@@ -82,23 +82,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Müşteri Bilgileri";
             // 
-            // tc
-            // 
-            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tc.Location = new System.Drawing.Point(263, 112);
-            this.tc.Mask = "00000000000";
-            this.tc.Name = "tc";
-            this.tc.Size = new System.Drawing.Size(183, 34);
-            this.tc.TabIndex = 1;
-            // 
             // telefon
             // 
+            this.telefon.Enabled = false;
             this.telefon.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.telefon.Location = new System.Drawing.Point(655, 52);
-            this.telefon.Mask = "(999) 000-0000";
+            this.telefon.Location = new System.Drawing.Point(655, 50);
             this.telefon.Name = "telefon";
             this.telefon.Size = new System.Drawing.Size(222, 34);
             this.telefon.TabIndex = 4;
+            // 
+            // tc
+            // 
+            this.tc.Enabled = false;
+            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Location = new System.Drawing.Point(263, 106);
+            this.tc.Name = "tc";
+            this.tc.Size = new System.Drawing.Size(183, 34);
+            this.tc.TabIndex = 1;
             // 
             // geri_don
             // 
@@ -147,6 +147,7 @@
             // 
             // soyad
             // 
+            this.soyad.Enabled = false;
             this.soyad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.soyad.Location = new System.Drawing.Point(263, 227);
             this.soyad.Name = "soyad";
@@ -155,6 +156,7 @@
             // 
             // ad
             // 
+            this.ad.Enabled = false;
             this.ad.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ad.Location = new System.Drawing.Point(263, 167);
             this.ad.Name = "ad";
@@ -203,6 +205,7 @@
             // 
             // marka
             // 
+            this.marka.Enabled = false;
             this.marka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.marka.Location = new System.Drawing.Point(655, 171);
             this.marka.Name = "marka";
@@ -211,6 +214,7 @@
             // 
             // email
             // 
+            this.email.Enabled = false;
             this.email.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.email.Location = new System.Drawing.Point(655, 112);
             this.email.Name = "email";
@@ -297,8 +301,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button geri_don;
         private System.Windows.Forms.Button kayitli_arac_giris;
-        private System.Windows.Forms.MaskedTextBox tc;
-        private System.Windows.Forms.MaskedTextBox telefon;
+        private System.Windows.Forms.TextBox telefon;
+        private System.Windows.Forms.TextBox tc;
     }
 
 }

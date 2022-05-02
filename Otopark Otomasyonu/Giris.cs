@@ -63,6 +63,7 @@ namespace Otopark_Otomasyonu
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             sifre1.UseSystemPasswordChar=true;
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -71,13 +72,5 @@ namespace Otopark_Otomasyonu
             Application.Exit();
         }
 
-        
-
-       
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -102,7 +102,7 @@
             this.kullanici_adi1.Name = "kullanici_adi1";
             this.kullanici_adi1.Size = new System.Drawing.Size(183, 34);
             this.kullanici_adi1.TabIndex = 0;
-            this.kullanici_adi1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+         
             // 
             // giris
             // 

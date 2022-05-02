@@ -76,6 +76,7 @@
             this.yeni_sifre.Name = "yeni_sifre";
             this.yeni_sifre.Size = new System.Drawing.Size(212, 34);
             this.yeni_sifre.TabIndex = 2;
+            this.yeni_sifre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.yeni_sifre_KeyPress);
             // 
             // label3
             // 

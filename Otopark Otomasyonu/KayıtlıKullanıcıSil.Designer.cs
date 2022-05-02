@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayıtlıKullanıcıSil));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tc = new System.Windows.Forms.TextBox();
             this.kayitli_kullanici_sil = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.geri_don = new System.Windows.Forms.Button();
-            this.tc = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,15 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sililinicek Kişi Bilgileri";
+            // 
+            // tc
+            // 
+            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Location = new System.Drawing.Point(253, 45);
+            this.tc.Name = "tc";
+            this.tc.Size = new System.Drawing.Size(212, 34);
+            this.tc.TabIndex = 0;
+            this.tc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tc_KeyPress);
             // 
             // kayitli_kullanici_sil
             // 
@@ -87,14 +96,6 @@
             this.geri_don.Text = "Geri Dön";
             this.geri_don.UseVisualStyleBackColor = false;
             this.geri_don.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // tc
-            // 
-            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tc.Location = new System.Drawing.Point(253, 45);
-            this.tc.Name = "tc";
-            this.tc.Size = new System.Drawing.Size(212, 34);
-            this.tc.TabIndex = 0;
             // 
             // KayıtlıKullanıcıSil
             // 
