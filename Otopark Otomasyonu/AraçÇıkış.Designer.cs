@@ -101,7 +101,7 @@
             // 
             this.park_yeri.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.park_yeri.FormattingEnabled = true;
-            this.park_yeri.Location = new System.Drawing.Point(275, 45);
+            this.park_yeri.Location = new System.Drawing.Point(275, 50);
             this.park_yeri.Name = "park_yeri";
             this.park_yeri.Size = new System.Drawing.Size(183, 38);
             this.park_yeri.TabIndex = 0;

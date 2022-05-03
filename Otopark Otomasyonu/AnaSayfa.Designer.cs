@@ -41,8 +41,10 @@
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.ımageList2 = new System.Windows.Forms.ImageList(this.components);
             this.oturum_kapat = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oturum_kapat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kayitli_arac_giris
@@ -192,6 +194,18 @@
             this.oturum_kapat.TabStop = false;
             this.oturum_kapat.Click += new System.EventHandler(this.oturum_kapat_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1086, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(208, 288);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,6 +215,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1306, 579);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.oturum_kapat);
             this.Controls.Add(this.ayarlar);
             this.Controls.Add(this.kayitli_kullanici_sil);
@@ -219,6 +234,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ayarlar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oturum_kapat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,6 +253,7 @@
         private System.Windows.Forms.ImageList ımageList1;
         private System.Windows.Forms.ImageList ımageList2;
         private System.Windows.Forms.PictureBox oturum_kapat;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

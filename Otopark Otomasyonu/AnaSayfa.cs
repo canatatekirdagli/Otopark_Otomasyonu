@@ -93,5 +93,12 @@ namespace Otopark_Otomasyonu
             giris1.Show(this);
             Hide();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            hesap_kesim hesap_Kesim = new hesap_kesim();
+            hesap_Kesim.Show(this);
+            Hide();
+        }
     }
 }
