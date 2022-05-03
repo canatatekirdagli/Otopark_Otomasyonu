@@ -44,7 +44,10 @@ namespace Otopark_Otomasyonu
             SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM otopark", connection));
             while (reader.Read())
             {
-                park_yeri.Items.Add(reader["park_yeri"]);
+                if ((bool)reader["otopark_durumu"] == false)
+                {
+                    park_yeri.Items.Add(reader["park_yeri"]);
+                }
             }
             connection.CloseConnection();
             SqlDataReader reader1 = connection.DataReader(string.Format("SELECT * FROM musteri", connection));

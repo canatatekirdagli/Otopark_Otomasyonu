@@ -65,6 +65,7 @@ namespace Otopark_Otomasyonu
     "'" + marka.Text.ToString() + "')");
                     connection.SqlProcess("insert into musteri(tc_kimlik_no,ad,soyad,telefon,email,plaka) values ('" + tc.Text + "','" + ad.Text + "','" + soyad.Text + "'," +
         "'" + telefon.Text.ToString() + "','" + email.Text + "','" + plaka.Text + "')");
+                    connection.SqlProcess(("update otopark set otopark_durumu='true' where park_yeri='" + park_yeri.Text + "'"));
                     MessageBox.Show("Müşteri Kayıt İşlemi Gerçekleşti.");
 
                     OtoparkDurumu otoparkDurumu = new OtoparkDurumu();
@@ -93,7 +94,10 @@ namespace Otopark_Otomasyonu
             SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM otopark",connection));
             while (reader.Read())
             {
-                park_yeri.Items.Add(reader["park_yeri"]);
+                if ((bool)reader["otopark_durumu"]==false)
+                {
+                    park_yeri.Items.Add(reader["park_yeri"]);
+                }
             }
             connection.CloseConnection();
             SqlDataReader reader1 = connection.DataReader(string.Format("SELECT * FROM marka", connection));

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,17 @@ namespace Otopark_Otomasyonu
 
         private void OtoparkDurumu_Load(object sender, EventArgs e)
         {
+            DatabaseConnection connection = new DatabaseConnection();
+            SqlDataReader reader = connection.DataReader(string.Format("Select * from otopark"));
+            while (reader.Read())
+            {
+                if ((bool)reader["otopark_durumu"] == true)
+                {
+                  string a= reader["park_yeri"].ToString();
+                    
 
+                }
+            }
         }
 
         private void B15_Click(object sender, EventArgs e)

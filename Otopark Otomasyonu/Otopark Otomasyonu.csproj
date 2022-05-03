@@ -114,11 +114,11 @@
     <Compile Include="Giris.Designer.cs">
       <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
-    <Compile Include="HesapKesim.cs">
+    <Compile Include="HesapOzetleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HesapKesim.Designer.cs">
-      <DependentUpon>HesapKesim.cs</DependentUpon>
+    <Compile Include="HesapOzetleri.Designer.cs">
+      <DependentUpon>HesapOzetleri.cs</DependentUpon>
     </Compile>
     <Compile Include="KayıtlıAraçGiriş.cs">
       <SubType>Form</SubType>
@@ -176,8 +176,8 @@
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HesapKesim.resx">
-      <DependentUpon>HesapKesim.cs</DependentUpon>
+    <EmbeddedResource Include="HesapOzetleri.resx">
+      <DependentUpon>HesapOzetleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KayıtlıAraçGiriş.resx">
       <DependentUpon>KayıtlıAraçGiriş.cs</DependentUpon>
