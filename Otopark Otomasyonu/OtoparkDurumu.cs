@@ -34,7 +34,11 @@ namespace Otopark_Otomasyonu
                 if ((bool)reader["otopark_durumu"] == true)
                 {
                   string a= reader["park_yeri"].ToString();
-                    
+                  Button button = new Button();
+                    if (button.Text==a)
+                    {
+                        _ = button.BackColor == Color.Red;
+                    }
 
                 }
             }
