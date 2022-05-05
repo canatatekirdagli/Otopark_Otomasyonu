@@ -20,8 +20,21 @@ namespace Otopark_Otomasyonu
         DatabaseConnection connection = new DatabaseConnection();
         private void Giris_Load(object sender, EventArgs e)
         {
-        
-            
+            try
+            {
+                connection.OpenConnection();  // Bağlantı açılıyor
+                if (connection.State()) // Tanımın durumunu kontrol ediyoruz (bağlı mı bağlı değil mi?)
+                    MessageBox.Show("Bağlantı başarılı bir şekilde gerçekleşti.");
+                else
+                    MessageBox.Show("Veritabanına bağlanılmadı.");
+                connection.CloseConnection();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Hata oluştu : " + err.Message, "HATA!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+
         }
 
 
