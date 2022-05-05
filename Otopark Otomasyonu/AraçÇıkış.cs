@@ -46,13 +46,22 @@ namespace Otopark_Otomasyonu
 
         private void button7_Click(object sender, EventArgs e)
         {
-            con.SqlProcess(string.Format("UPDATE araba SET park_yeri = NULL,cikis_saati = '{0}',giris_saati = NULL WHERE plaka = '{1}'",DateTime.Now.ToString(),cmbPlaka.SelectedItem.ToString()));
-            con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = 'False' WHERE park_yeri = '{0}'",pYeri));
-            con.SqlProcess(string.Format("UPDATE cuzdan SET toplam_kazanc += {0}", ucret));
-            MessageBox.Show("Aracın Çıkışı Yapıldı");
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show();
-            Hide();
+            try
+            {
+                con.SqlProcess(string.Format("UPDATE araba SET park_yeri = NULL,cikis_saati = '{0}',giris_saati = NULL WHERE plaka = '{1}'", DateTime.Now.ToString(), cmbPlaka.SelectedItem.ToString()));
+                con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = 'False' WHERE park_yeri = '{0}'", pYeri));
+                con.SqlProcess(string.Format("UPDATE cuzdan SET toplam_kazanc += {0}", ucret));
+                MessageBox.Show("Aracın Çıkışı Yapıldı");
+                AnaSayfa anaSayfa = new AnaSayfa();
+                anaSayfa.Show();
+                Hide();
+            }
+            catch (Exception hata)
+            {
+
+                MessageBox.Show("İşlem Sırasında Hata Oluştu." + hata.Message);
+            }
+         
         }
 
         private void Araç_Çıkışcs_Load(object sender, EventArgs e)
