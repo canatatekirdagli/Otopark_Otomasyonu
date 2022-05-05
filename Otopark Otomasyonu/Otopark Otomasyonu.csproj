@@ -108,6 +108,7 @@
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="FiyatTarifesi.cs" />
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hesap_kesim));
             this.geri_don = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.kazanc = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // geri_don
             // 
             this.geri_don.BackColor = System.Drawing.Color.Navy;
-            this.geri_don.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geri_don.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.geri_don.ForeColor = System.Drawing.SystemColors.Control;
             this.geri_don.Location = new System.Drawing.Point(1081, 498);
             this.geri_don.Name = "geri_don";
@@ -52,8 +52,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Navy;
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.Controls.Add(this.kazanc);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox3.Location = new System.Drawing.Point(60, 44);
             this.groupBox3.Name = "groupBox3";
@@ -61,17 +62,27 @@
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hesap Özetleri";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // dataGridView1
+            // label2
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1184, 416);
-            this.dataGridView1.TabIndex = 0;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.Orange;
+            this.label2.Location = new System.Drawing.Point(229, 205);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(492, 69);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Toplam Kazanç :";
+            // 
+            // kazanc
+            // 
+            this.kazanc.AutoSize = true;
+            this.kazanc.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kazanc.Location = new System.Drawing.Point(727, 205);
+            this.kazanc.Name = "kazanc";
+            this.kazanc.Size = new System.Drawing.Size(0, 69);
+            this.kazanc.TabIndex = 2;
             // 
             // hesap_kesim
             // 
@@ -87,8 +98,9 @@
             this.Name = "hesap_kesim";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HESAP ÖZETLERİ";
+            this.Load += new System.EventHandler(this.hesap_kesim_Load);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -97,6 +109,7 @@
 
         private System.Windows.Forms.Button geri_don;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label kazanc;
+        private System.Windows.Forms.Label label2;
     }
 }

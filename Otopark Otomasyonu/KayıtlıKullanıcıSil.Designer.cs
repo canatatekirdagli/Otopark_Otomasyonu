@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayıtlıKullanıcıSil));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.plaka = new System.Windows.Forms.TextBox();
+            this.kayitli_kullanici_s = new System.Windows.Forms.Label();
             this.tc = new System.Windows.Forms.TextBox();
             this.kayitli_kullanici_sil = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.geri_don = new System.Windows.Forms.Button();
-            this.plaka = new System.Windows.Forms.TextBox();
-            this.kayitli_kullanici_s = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             this.groupBox1.Controls.Add(this.tc);
             this.groupBox1.Controls.Add(this.kayitli_kullanici_sil);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(376, 163);
             this.groupBox1.Name = "groupBox1";
@@ -56,9 +56,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sililinicek Kişi Bilgileri";
             // 
+            // plaka
+            // 
+            this.plaka.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.plaka.Location = new System.Drawing.Point(253, 101);
+            this.plaka.Name = "plaka";
+            this.plaka.Size = new System.Drawing.Size(212, 34);
+            this.plaka.TabIndex = 1;
+            // 
+            // kayitli_kullanici_s
+            // 
+            this.kayitli_kullanici_s.AutoSize = true;
+            this.kayitli_kullanici_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayitli_kullanici_s.Location = new System.Drawing.Point(122, 104);
+            this.kayitli_kullanici_s.Name = "kayitli_kullanici_s";
+            this.kayitli_kullanici_s.Size = new System.Drawing.Size(92, 29);
+            this.kayitli_kullanici_s.TabIndex = 3;
+            this.kayitli_kullanici_s.Text = "Plaka :";
+            // 
             // tc
             // 
-            this.tc.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tc.Location = new System.Drawing.Point(253, 45);
             this.tc.Name = "tc";
             this.tc.Size = new System.Drawing.Size(212, 34);
@@ -68,30 +86,30 @@
             // kayitli_kullanici_sil
             // 
             this.kayitli_kullanici_sil.BackColor = System.Drawing.Color.Navy;
-            this.kayitli_kullanici_sil.Font = new System.Drawing.Font("Cascadia Mono", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayitli_kullanici_sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kayitli_kullanici_sil.ForeColor = System.Drawing.SystemColors.Control;
             this.kayitli_kullanici_sil.Location = new System.Drawing.Point(253, 159);
             this.kayitli_kullanici_sil.Name = "kayitli_kullanici_sil";
             this.kayitli_kullanici_sil.Size = new System.Drawing.Size(212, 73);
             this.kayitli_kullanici_sil.TabIndex = 2;
-            this.kayitli_kullanici_sil.Text = "Kayıtlı Kullanıcıyı Sil";
+            this.kayitli_kullanici_sil.Text = "Kayıtlı Müşteriyi Sil";
             this.kayitli_kullanici_sil.UseVisualStyleBackColor = false;
             this.kayitli_kullanici_sil.Click += new System.EventHandler(this.kayitli_kullanici_sil_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(5, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 30);
+            this.label1.Size = new System.Drawing.Size(196, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "T.C. Kimlik No :";
             // 
             // geri_don
             // 
             this.geri_don.BackColor = System.Drawing.Color.Navy;
-            this.geri_don.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.geri_don.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.geri_don.ForeColor = System.Drawing.SystemColors.Control;
             this.geri_don.Location = new System.Drawing.Point(947, 462);
             this.geri_don.Name = "geri_don";
@@ -100,24 +118,6 @@
             this.geri_don.Text = "Geri Dön";
             this.geri_don.UseVisualStyleBackColor = false;
             this.geri_don.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // plaka
-            // 
-            this.plaka.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.plaka.Location = new System.Drawing.Point(253, 101);
-            this.plaka.Name = "plaka";
-            this.plaka.Size = new System.Drawing.Size(212, 34);
-            this.plaka.TabIndex = 1;
-            // 
-            // kayitli_kullanici_s
-            // 
-            this.kayitli_kullanici_s.AutoSize = true;
-            this.kayitli_kullanici_s.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kayitli_kullanici_s.Location = new System.Drawing.Point(122, 104);
-            this.kayitli_kullanici_s.Name = "kayitli_kullanici_s";
-            this.kayitli_kullanici_s.Size = new System.Drawing.Size(104, 30);
-            this.kayitli_kullanici_s.TabIndex = 3;
-            this.kayitli_kullanici_s.Text = "Plaka :";
             // 
             // KayıtlıKullanıcıSil
             // 

@@ -55,7 +55,7 @@
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.sifre1);
-            this.groupBox4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Location = new System.Drawing.Point(40, 35);
             this.groupBox4.Name = "groupBox4";
@@ -69,7 +69,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(324, 183);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(182, 26);
+            this.checkBox1.Size = new System.Drawing.Size(162, 24);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Parolayı Göster";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -97,17 +97,16 @@
             // 
             // kullanici_adi1
             // 
-            this.kullanici_adi1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanici_adi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kullanici_adi1.Location = new System.Drawing.Point(323, 74);
             this.kullanici_adi1.Name = "kullanici_adi1";
             this.kullanici_adi1.Size = new System.Drawing.Size(183, 34);
             this.kullanici_adi1.TabIndex = 0;
-         
             // 
             // giris
             // 
             this.giris.BackColor = System.Drawing.Color.Navy;
-            this.giris.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.giris.ForeColor = System.Drawing.SystemColors.Control;
             this.giris.Location = new System.Drawing.Point(323, 234);
             this.giris.Name = "giris";
@@ -120,26 +119,26 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.Location = new System.Drawing.Point(177, 143);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 30);
+            this.label9.Size = new System.Drawing.Size(82, 29);
             this.label9.TabIndex = 7;
             this.label9.Text = "Şifre :";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.Location = new System.Drawing.Point(73, 78);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 30);
+            this.label10.Size = new System.Drawing.Size(172, 29);
             this.label10.TabIndex = 6;
             this.label10.Text = "Kullanıcı Adı :";
             // 
             // sifre1
             // 
-            this.sifre1.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sifre1.Location = new System.Drawing.Point(323, 143);
             this.sifre1.Name = "sifre1";
             this.sifre1.Size = new System.Drawing.Size(183, 34);
@@ -150,17 +149,18 @@
             // 
             this.cikis.AutoSize = true;
             this.cikis.BackColor = System.Drawing.Color.Transparent;
-            this.cikis.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cikis.ForeColor = System.Drawing.Color.White;
             this.cikis.Location = new System.Drawing.Point(704, 9);
             this.cikis.Name = "cikis";
-            this.cikis.Size = new System.Drawing.Size(50, 57);
+            this.cikis.Size = new System.Drawing.Size(52, 51);
             this.cikis.TabIndex = 4;
             this.cikis.Text = "X";
             this.cikis.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Giris1
             // 
+            this.AcceptButton = this.giris;
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -176,7 +176,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GİRİŞ";
             this.Load += new System.EventHandler(this.Giris_Load);
-           
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
