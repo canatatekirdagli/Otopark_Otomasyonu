@@ -90,23 +90,45 @@ namespace Otopark_Otomasyonu
                 tc.Text = reader["tc_kimlik_no"].ToString();
                 ad.Text = reader["ad"].ToString();
                 soyad.Text = reader["soyad"].ToString();
-                
+
             }
             con.CloseConnection();
             SqlDataReader readerMarka = con.DataReader(string.Format("SELECT * FROM araba WHERE plaka = '{0}'", cmbPlaka.SelectedItem.ToString()));
-            
+
             while (readerMarka.Read())
             {
                 marka.Text = readerMarka["marka"].ToString();
+
                 giris_tarihi.Text = readerMarka["giris_saati"].ToString();
-                SqlDataReader readerSure = con2.DataReader(string.Format("SELECT DATEDIFF(MINUTE,'{0}','{1}') AS 'Sure'",(DateTime)readerMarka["giris_saati"],DateTime.Now.ToString()));
-                while (readerSure.Read())
+                if (readerMarka["giris_saati"].ToString()[1] != '.')
                 {
-                    sure.Text = readerSure["Sure"].ToString() + " dakika";
-                    sureToplam = (int)readerSure["Sure"];
+                    SqlDataReader readerSure = con2.DataReader(string.Format("SELECT DATEDIFF(MINUTE,'{0}',FORMAT(GETDATE(),'dd.MM.yyyy HH:mm:ss')) AS 'Sure'", readerMarka["giris_saati"].ToString()));
+                    while (readerSure.Read())
+                    {
+                        sure.Text = readerSure["Sure"].ToString() + " dakika";
+                        sureToplam = (int)readerSure["Sure"];
+                    }
+                    pYeri = readerMarka["park_yeri"].ToString();
+                    con2.CloseConnection();
                 }
-                pYeri = readerMarka["park_yeri"].ToString();
-                con2.CloseConnection();
+                else
+                {
+                    string saatString = string.Format("0{0}", (DateTime)readerMarka["giris_saati"]);
+                    string ilkParca = saatString.Substring(0, 2);
+                    string ikinciparca = saatString.Substring(3, 2);
+                    string ucuncuParca = saatString.Substring(6);
+                    string girisTarihSon = string.Format("{0}.{1}.{2}", ikinciparca, ilkParca, ucuncuParca);
+
+
+                    SqlDataReader readerSure = con2.DataReader(string.Format("SELECT DATEDIFF(MINUTE,'{0}',FORMAT(GETDATE(),'dd.MM.yyyy HH:mm:ss')) AS 'Sure'", girisTarihSon));
+                    while (readerSure.Read())
+                    {
+                        sure.Text = readerSure["Sure"].ToString() + " dakika";
+                        sureToplam = (int)readerSure["Sure"];
+                    }
+                    pYeri = readerMarka["park_yeri"].ToString();
+                    con2.CloseConnection();
+                }
             }
             con.CloseConnection();
             FiyatTarifesi tarife = new FiyatTarifesi(sureToplam);
