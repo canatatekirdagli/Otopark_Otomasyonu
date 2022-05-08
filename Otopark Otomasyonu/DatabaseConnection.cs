@@ -51,7 +51,7 @@ namespace Otopark_Otomasyonu
             connection.Open();
         }
  
-        public void SqlProcess(string query)
+        public void SqlProcess(string query) // QUERY
         {
             OpenConnection();
             SqlCommand sqlCommand = new SqlCommand(query,connection);
