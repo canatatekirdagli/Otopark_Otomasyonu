@@ -18,7 +18,7 @@ namespace Otopark_Otomasyonu
         SqlDataReader reader;
         public DatabaseConnection()
         {
-            connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=otopark_simulasyonu;Integrated Security = True";
+            connectionString = "Data Source=CAN-ATA;Initial Catalog=otopark_simulasyonu;Integrated Security = True";
             connection = new SqlConnection(connectionString);
           
         }
@@ -50,7 +50,7 @@ namespace Otopark_Otomasyonu
         {
             connection.Open();
         }
-
+ 
         public void SqlProcess(string query)
         {
             OpenConnection();
