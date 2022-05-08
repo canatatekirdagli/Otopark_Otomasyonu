@@ -45,7 +45,7 @@ namespace Otopark_Otomasyonu
         {
 
             DatabaseConnection connection = new DatabaseConnection();
-            //kaynakça https://www.kodlamamerkezi.com/c-net/c-ile-sql-server-veritabanina-kayit-ekleme/comment-page-1/#comment-9236  ----- https://www.youtube.com/watch?v=45tftN9IeQ0
+            
             try
             {
                 if (plaka.Text==""|| renk.Text == "" || park_yeri.Text == "" || marka.Text == "" || tc.Text == "" ||
@@ -54,15 +54,15 @@ namespace Otopark_Otomasyonu
                     MessageBox.Show("Lütfen boş kısımları doldurunuz!!");
                 }else if (tc.TextLength < 11|| tc.TextLength>11)
                 {
-                    MessageBox.Show("Lütfen 11 haneli TC Kimlik numaranızı giriniz!!");
+                    MessageBox.Show("Lütfen TC Kimlik numaranızı 11 haneli olarak giriniz!!");
                 }else if (telefon.TextLength < 10||telefon.TextLength>10)
                 {
                     MessageBox.Show("Lütfen telefon numaranızı başında 0 olmadan 10 haneli olarak giriniz.");
                 }
                 else
                 {
-                    connection.SqlProcess("insert into araba(plaka,renk,park_yeri,marka) values ('" + plaka.Text + "','" + renk.Text + "','" + park_yeri.Text + "'," +
-    "'" + marka.Text.ToString() + "')");
+                    connection.SqlProcess("insert into araba(plaka,renk,park_yeri,marka,giris_saati) values ('" + plaka.Text + "','" + renk.Text + "','" + park_yeri.Text + "'," +
+    "'" + marka.Text.ToString() + "','" + DateTime.Now.ToString() + "')");
                     connection.SqlProcess("insert into musteri(tc_kimlik_no,ad,soyad,telefon,email,plaka) values ('" + tc.Text + "','" + ad.Text + "','" + soyad.Text + "'," +
         "'" + telefon.Text.ToString() + "','" + email.Text + "','" + plaka.Text + "')");
                     connection.SqlProcess(("update otopark set otopark_durumu='true' where park_yeri='" + park_yeri.Text + "'"));

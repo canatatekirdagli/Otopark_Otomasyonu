@@ -16,7 +16,7 @@ namespace Otopark_Otomasyonu
         DatabaseConnection con = new DatabaseConnection();
         DatabaseConnection con2 = new DatabaseConnection();
         string pYeri = "";
-        int ucret = 0;
+        int total = 0;
         public Araç_Çıkışcs()
         {
             InitializeComponent();
@@ -46,13 +46,20 @@ namespace Otopark_Otomasyonu
 
         private void button7_Click(object sender, EventArgs e)
         {
-            con.SqlProcess(string.Format("UPDATE araba SET park_yeri = NULL,cikis_saati = '{0}',giris_saati = NULL WHERE plaka = '{1}'",DateTime.Now.ToString(),cmbPlaka.SelectedItem.ToString()));
-            con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = 'False' WHERE park_yeri = '{0}'",pYeri));
-            con.SqlProcess(string.Format("UPDATE cuzdan SET toplam_kazanc += {0}", ucret));
-            MessageBox.Show("Aracın Çıkışı Yapıldı");
-            AnaSayfa anaSayfa = new AnaSayfa();
-            anaSayfa.Show();
-            Hide();
+            if (cmbPlaka.SelectedItem != null)
+            {
+                con.SqlProcess(string.Format("UPDATE araba SET park_yeri = NULL,cikis_saati = '{0}',giris_saati = NULL WHERE plaka = '{1}'", DateTime.Now.ToString(), cmbPlaka.SelectedItem.ToString()));
+                con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = 'False' WHERE park_yeri = '{0}'", pYeri));
+                con.SqlProcess(string.Format("UPDATE cuzdan SET toplam_kazanc += {0}", total));
+                MessageBox.Show("Aracın Çıkışı Yapıldı");
+                AnaSayfa anaSayfa = new AnaSayfa();
+                anaSayfa.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Eksik ya da yanlış bir giriş mevcut kontrol edip tekrar giriş yapınız!!");
+            }
         }
 
         private void Araç_Çıkışcs_Load(object sender, EventArgs e)
@@ -77,6 +84,7 @@ namespace Otopark_Otomasyonu
         {
             SqlDataReader reader = con.DataReader(string.Format("SELECT * FROM musteri WHERE plaka = '{0}'", cmbPlaka.SelectedItem.ToString()));
             int sureToplam = 0;
+            int ucret = 0;
             while (reader.Read())
             {
                 tc.Text = reader["tc_kimlik_no"].ToString();
@@ -104,6 +112,7 @@ namespace Otopark_Otomasyonu
             FiyatTarifesi tarife = new FiyatTarifesi(sureToplam);
             toplam_tutar.Text = tarife.UcretHesapla().ToString();
             ucret = tarife.UcretHesapla();
+            total = ucret;
         }
     }
 }

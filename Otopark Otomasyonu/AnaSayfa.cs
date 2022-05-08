@@ -96,7 +96,7 @@ namespace Otopark_Otomasyonu
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            hesap_kesim hesap_Kesim = new hesap_kesim();
+            Hesap_kesim hesap_Kesim = new Hesap_kesim();
             hesap_Kesim.Show(this);
             Hide();
         }

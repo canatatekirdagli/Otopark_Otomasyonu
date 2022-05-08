@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Otopark_Otomasyonu
 {
-    public partial class hesap_kesim : Form
+    public partial class Hesap_kesim : Form
     {
         DatabaseConnection con = new DatabaseConnection();
-        public hesap_kesim()
+        public Hesap_kesim()
         {
             InitializeComponent();
         }

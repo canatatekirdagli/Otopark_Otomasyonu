@@ -20,8 +20,21 @@ namespace Otopark_Otomasyonu
         DatabaseConnection connection = new DatabaseConnection();
         private void Giris_Load(object sender, EventArgs e)
         {
-        
-            
+            try
+            {
+                connection.OpenConnection();  // Bağlantı açılıyor
+                if (connection.State()) // Tanımın durumunu kontrol ediyoruz (bağlı mı bağlı değil mi?)
+                    MessageBox.Show("Bağlantı başarılı bir şekilde gerçekleşti.");
+                else
+                    MessageBox.Show("Veritabanına bağlanılmadı.");
+                connection.CloseConnection();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Hata oluştu : " + err.Message, "HATA!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+
         }
 
 
@@ -36,13 +49,28 @@ namespace Otopark_Otomasyonu
             {
                 string kullanici_adi = kullanici_adi1.Text;
                 string sifre = sifre1.Text;
-                connection.Login(kullanici_adi, sifre, this);              
+                Login(kullanici_adi, sifre, this);              
             }
            
 
           
         }
-
+        public void Login(string kullanici_adi, string sifre, Form form1)//Giriş Ekranı
+        {
+            SqlDataReader reader = connection.DataReader(string.Format("SELECT * FROM giris WHERE kullanici_adi = '{0}' AND sifre = '{1}'", kullanici_adi, sifre));
+            if (reader.HasRows)
+            {
+                MessageBox.Show("Giriş başarılı!");
+                AnaSayfa anasayfa = new AnaSayfa();
+                anasayfa.Show();
+                form1.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adı ve/veya şifre yanlış.");
+            }
+            connection.CloseConnection();
+        }
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
 

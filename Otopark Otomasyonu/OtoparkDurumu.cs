@@ -13,6 +13,7 @@ namespace Otopark_Otomasyonu
 {
     public partial class OtoparkDurumu : Form
     {
+        DatabaseConnection con = new DatabaseConnection();
         public OtoparkDurumu()
         {
             InitializeComponent();
@@ -27,17 +28,20 @@ namespace Otopark_Otomasyonu
 
         private void OtoparkDurumu_Load(object sender, EventArgs e)
         {
-            DatabaseConnection connection = new DatabaseConnection();
-            SqlDataReader reader = connection.DataReader(string.Format("Select * from otopark"));
-            while (reader.Read())
+            foreach (var item in groupBox1.Controls)
             {
-                if ((bool)reader["otopark_durumu"] == true)
+                if (item is Button)
                 {
-                  string a= reader["park_yeri"].ToString();
-                    
-
+                    Button btn = (Button)item;
+                    SqlDataReader reader = con.DataReader(string.Format("SELECT * FROM otopark WHERE park_yeri = '{0}' AND otopark_durumu = 'TRUE'",btn.Text.ToLower()));
+                    if (reader.HasRows)
+                    {
+                        btn.BackColor = Color.Red;
+                    }
                 }
+                con.CloseConnection();
             }
+         
         }
 
         private void B15_Click(object sender, EventArgs e)

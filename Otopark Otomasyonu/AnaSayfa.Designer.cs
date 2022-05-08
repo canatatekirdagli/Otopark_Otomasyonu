@@ -54,11 +54,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kayitli_arac_giris.BackColor = System.Drawing.Color.Navy;
             this.kayitli_arac_giris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.kayitli_arac_giris.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayitli_arac_giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kayitli_arac_giris.ForeColor = System.Drawing.Color.White;
-            this.kayitli_arac_giris.Location = new System.Drawing.Point(492, 67);
+            this.kayitli_arac_giris.Location = new System.Drawing.Point(369, 54);
+            this.kayitli_arac_giris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kayitli_arac_giris.Name = "kayitli_arac_giris";
-            this.kayitli_arac_giris.Size = new System.Drawing.Size(334, 73);
+            this.kayitli_arac_giris.Size = new System.Drawing.Size(250, 59);
             this.kayitli_arac_giris.TabIndex = 0;
             this.kayitli_arac_giris.Text = "Kayıtlı Araç Giriş";
             this.kayitli_arac_giris.UseVisualStyleBackColor = false;
@@ -71,11 +72,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.arac_cikis.BackColor = System.Drawing.Color.Navy;
             this.arac_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.arac_cikis.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arac_cikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arac_cikis.ForeColor = System.Drawing.Color.White;
-            this.arac_cikis.Location = new System.Drawing.Point(492, 162);
+            this.arac_cikis.Location = new System.Drawing.Point(369, 132);
+            this.arac_cikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.arac_cikis.Name = "arac_cikis";
-            this.arac_cikis.Size = new System.Drawing.Size(334, 73);
+            this.arac_cikis.Size = new System.Drawing.Size(250, 59);
             this.arac_cikis.TabIndex = 1;
             this.arac_cikis.Text = "Araç Çıkış";
             this.arac_cikis.UseVisualStyleBackColor = false;
@@ -88,11 +90,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kullanici_kaydi.BackColor = System.Drawing.Color.Navy;
             this.kullanici_kaydi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.kullanici_kaydi.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kullanici_kaydi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kullanici_kaydi.ForeColor = System.Drawing.Color.White;
-            this.kullanici_kaydi.Location = new System.Drawing.Point(492, 262);
+            this.kullanici_kaydi.Location = new System.Drawing.Point(369, 213);
+            this.kullanici_kaydi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kullanici_kaydi.Name = "kullanici_kaydi";
-            this.kullanici_kaydi.Size = new System.Drawing.Size(334, 73);
+            this.kullanici_kaydi.Size = new System.Drawing.Size(250, 59);
             this.kullanici_kaydi.TabIndex = 2;
             this.kullanici_kaydi.Text = "Kullanıcı Kaydı";
             this.kullanici_kaydi.UseVisualStyleBackColor = false;
@@ -105,11 +108,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.otopark_durumu.BackColor = System.Drawing.Color.Navy;
             this.otopark_durumu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.otopark_durumu.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otopark_durumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otopark_durumu.ForeColor = System.Drawing.Color.White;
-            this.otopark_durumu.Location = new System.Drawing.Point(492, 362);
+            this.otopark_durumu.Location = new System.Drawing.Point(369, 294);
+            this.otopark_durumu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otopark_durumu.Name = "otopark_durumu";
-            this.otopark_durumu.Size = new System.Drawing.Size(334, 73);
+            this.otopark_durumu.Size = new System.Drawing.Size(250, 59);
             this.otopark_durumu.TabIndex = 3;
             this.otopark_durumu.Text = "Otopark Durumu";
             this.otopark_durumu.UseVisualStyleBackColor = false;
@@ -121,9 +125,10 @@
             this.tarih_saat.BackColor = System.Drawing.Color.Navy;
             this.tarih_saat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tarih_saat.ForeColor = System.Drawing.SystemColors.Control;
-            this.tarih_saat.Location = new System.Drawing.Point(99, 87);
+            this.tarih_saat.Location = new System.Drawing.Point(74, 71);
+            this.tarih_saat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tarih_saat.Name = "tarih_saat";
-            this.tarih_saat.Size = new System.Drawing.Size(92, 32);
+            this.tarih_saat.Size = new System.Drawing.Size(70, 26);
             this.tarih_saat.TabIndex = 6;
             this.tarih_saat.Text = "label2";
             this.tarih_saat.Click += new System.EventHandler(this.dateTimeLabel_Click);
@@ -132,11 +137,12 @@
             // 
             this.cikis.AutoSize = true;
             this.cikis.BackColor = System.Drawing.Color.Transparent;
-            this.cikis.Font = new System.Drawing.Font("Cascadia Mono", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cikis.ForeColor = System.Drawing.Color.White;
-            this.cikis.Location = new System.Drawing.Point(1218, 20);
+            this.cikis.Location = new System.Drawing.Point(914, 16);
+            this.cikis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cikis.Name = "cikis";
-            this.cikis.Size = new System.Drawing.Size(50, 57);
+            this.cikis.Size = new System.Drawing.Size(41, 39);
             this.cikis.TabIndex = 7;
             this.cikis.Text = "X";
             this.cikis.Click += new System.EventHandler(this.label1_Click);
@@ -148,11 +154,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kayitli_kullanici_sil.BackColor = System.Drawing.Color.Navy;
             this.kayitli_kullanici_sil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.kayitli_kullanici_sil.Font = new System.Drawing.Font("Cascadia Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kayitli_kullanici_sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kayitli_kullanici_sil.ForeColor = System.Drawing.Color.White;
-            this.kayitli_kullanici_sil.Location = new System.Drawing.Point(492, 462);
+            this.kayitli_kullanici_sil.Location = new System.Drawing.Point(369, 375);
+            this.kayitli_kullanici_sil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kayitli_kullanici_sil.Name = "kayitli_kullanici_sil";
-            this.kayitli_kullanici_sil.Size = new System.Drawing.Size(334, 73);
+            this.kayitli_kullanici_sil.Size = new System.Drawing.Size(250, 59);
             this.kayitli_kullanici_sil.TabIndex = 4;
             this.kayitli_kullanici_sil.Text = "Kayıtlı Kullanıcı Sil";
             this.kayitli_kullanici_sil.UseVisualStyleBackColor = false;
@@ -162,9 +169,10 @@
             // 
             this.ayarlar.BackColor = System.Drawing.Color.Transparent;
             this.ayarlar.Image = ((System.Drawing.Image)(resources.GetObject("ayarlar.Image")));
-            this.ayarlar.Location = new System.Drawing.Point(1108, 422);
+            this.ayarlar.Location = new System.Drawing.Point(831, 343);
+            this.ayarlar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ayarlar.Name = "ayarlar";
-            this.ayarlar.Size = new System.Drawing.Size(160, 160);
+            this.ayarlar.Size = new System.Drawing.Size(120, 130);
             this.ayarlar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ayarlar.TabIndex = 9;
             this.ayarlar.TabStop = false;
@@ -186,9 +194,10 @@
             // 
             this.oturum_kapat.BackColor = System.Drawing.Color.Transparent;
             this.oturum_kapat.Image = ((System.Drawing.Image)(resources.GetObject("oturum_kapat.Image")));
-            this.oturum_kapat.Location = new System.Drawing.Point(55, 447);
+            this.oturum_kapat.Location = new System.Drawing.Point(41, 363);
+            this.oturum_kapat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.oturum_kapat.Name = "oturum_kapat";
-            this.oturum_kapat.Size = new System.Drawing.Size(119, 120);
+            this.oturum_kapat.Size = new System.Drawing.Size(89, 98);
             this.oturum_kapat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.oturum_kapat.TabIndex = 10;
             this.oturum_kapat.TabStop = false;
@@ -198,9 +207,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1086, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(814, 80);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 288);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 234);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -208,12 +218,12 @@
             // 
             // AnaSayfa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1306, 579);
+            this.ClientSize = new System.Drawing.Size(980, 470);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.oturum_kapat);
@@ -225,6 +235,7 @@
             this.Controls.Add(this.kullanici_kaydi);
             this.Controls.Add(this.kayitli_arac_giris);
             this.Controls.Add(this.arac_cikis);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AnaSayfa";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

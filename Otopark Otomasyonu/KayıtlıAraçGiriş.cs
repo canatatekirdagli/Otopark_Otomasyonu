@@ -28,13 +28,29 @@ namespace Otopark_Otomasyonu
 
         private void button5_Click(object sender, EventArgs e)
         {
-            con.SqlProcess(string.Format("UPDATE araba SET giris_saati = '{0}',cikis_saati = NULL,park_yeri = '{1}' WHERE plaka = '{2}'", DateTime.Now,park_yeri.SelectedItem.ToString(),plaka.SelectedItem.ToString()));
-            con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = '{0}' WHERE park_yeri = '{1}'","True", park_yeri.Text.ToString()));
+            if (park_yeri.SelectedItem != null)
+            {
+                try
+                {
+                    con.SqlProcess(string.Format("UPDATE araba SET giris_saati = '{0}',cikis_saati = NULL,park_yeri = '{1}' WHERE plaka = '{2}'", DateTime.Now, park_yeri.SelectedItem.ToString(), plaka.SelectedItem.ToString()));
+                    con.SqlProcess(string.Format("UPDATE otopark SET otopark_durumu = '{0}' WHERE park_yeri = '{1}'", "True", park_yeri.Text.ToString()));
 
 
-            OtoparkDurumu otoparkDurumu = new OtoparkDurumu();
-            otoparkDurumu.Show();
-            Hide();
+                    OtoparkDurumu otoparkDurumu = new OtoparkDurumu();
+                    otoparkDurumu.Show();
+                    Hide();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Çıkışta hata oldu tekrar deneyiniz!!");
+                    throw;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Eksik ya da yanlış bir giriş mevcut kontrol edip tekrar giriş yapınız!!");
+            }
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
