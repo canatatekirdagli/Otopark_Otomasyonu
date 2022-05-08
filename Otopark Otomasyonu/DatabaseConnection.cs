@@ -50,18 +50,7 @@ namespace Otopark_Otomasyonu
         {
             connection.Open();
         }
-        public bool State()
-        {
-            if (connection.State != System.Data.ConnectionState.Closed)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
+ 
         public void SqlProcess(string query)
         {
             OpenConnection();
